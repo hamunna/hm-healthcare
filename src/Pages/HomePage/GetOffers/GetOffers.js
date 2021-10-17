@@ -1,0 +1,24 @@
+import React from 'react';
+import { Container } from 'react-bootstrap';
+import './GetOffers.css';
+
+const GetOffers = () => {
+	return (
+		<div className="theme-primary-bg my-5 py-4">
+			<Container>
+				<div className="d-flex align-items-center justify-content-evenly">
+					<div>
+						<h3 className="fs-1 fw-bolder text-white">Get Offers</h3>
+					</div>
+
+					<div id="get-offers-filed">
+						<input type="email" name="get-offers" id="get-offers" placeholder="Your Email" />
+						<button className="btn-pill">Get Offer</button>
+					</div>
+				</div>
+			</Container>
+		</div>
+	);
+};
+
+export default GetOffers;

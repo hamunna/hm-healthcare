@@ -12,7 +12,7 @@ const Doctors = () => {
 	}, []);
 
 	return (
-		<div>
+		<div className="my-5">
 			<Container>
 				<div className="text-center my-5">
 					<h2 className="theme-primary-text text-uppercase fw-bold">Our Best Doctor</h2>

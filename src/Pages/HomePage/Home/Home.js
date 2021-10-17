@@ -6,6 +6,7 @@ import slider2 from '../../../images/banners/slider-2.jpg';
 import slider3 from '../../../images/banners/slider-3.jpg';
 import About from '../About/About';
 import Doctors from '../Doctors/Doctors';
+import GetOffers from '../GetOffers/GetOffers';
 import HealthcareBanner from '../HealthcareBanner/HealthcareBanner';
 import Services from '../Services/Services';
 
@@ -74,6 +75,9 @@ const Home = () => {
 
 			{/* Best Doctors Sectio */}
 			<Doctors></Doctors>
+
+			{/* Get Offers Section */}
+			<GetOffers></GetOffers>
 		</main>
 	);
 };
