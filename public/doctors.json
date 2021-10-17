@@ -1,0 +1,26 @@
+[
+	{
+		"id": 1,
+		"name": "Dr. Florence Glora",
+		"speciality": "Heart Sergon",
+		"image": "https://i.ibb.co/8sPsQ7k/doctor-1.jpg"
+	},
+	{
+		"id": 2,
+		"name": "Dr. Jack Smith",
+		"speciality": "MBBS",
+		"image": "https://i.ibb.co/8BHDsB7/doctor-2.jpg"
+	},
+	{
+		"id": 3,
+		"name": "Dr. Suphie Turner",
+		"speciality": "Gynechologist",
+		"image": "https://i.ibb.co/nBztRTk/doctor-3.jpg"
+	},
+	{
+		"id": 4,
+		"name": "Dr. Wasim Haque",
+		"speciality": "psychiatrist",
+		"image": "https://i.ibb.co/80LR9t5/doctor-4.jpg"
+	}
+]

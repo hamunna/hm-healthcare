@@ -12,9 +12,9 @@ const Services = () => {
 	}, []);
 
 	return (
-		<div style={{ backgroundColor: '#f2f2f2' }} className="py-2">
+		<div style={{ backgroundColor: '#f2f2f2' }} className="py-5">
 			<Container>
-				<div className="text-center my-5">
+				<div className="text-center mb-5">
 					<h2 className="theme-primary-text text-uppercase fw-bold">Our Services</h2>
 					<p className="text-secondary">Medical professionals, organizations, and ancillary health care
 						<br /> workers who provide medical care</p>

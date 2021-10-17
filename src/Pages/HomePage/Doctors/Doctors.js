@@ -1,11 +1,16 @@
-import React from 'react';
-import { Card, Col, Container, Row } from 'react-bootstrap';
-import doctor1 from '../../../images/doctors/doctor-1.jpg';
-import doctor2 from '../../../images/doctors/doctor-2.jpg';
-import doctor3 from '../../../images/doctors/doctor-3.jpg';
-import doctor4 from '../../../images/doctors/doctor-4.jpg';
+import React, { useEffect, useState } from 'react';
+import { Container, Row } from 'react-bootstrap';
+import Doctor from '../Doctor/Doctor';
 
 const Doctors = () => {
+	const [doctors, setDoctors] = useState([]);
+
+	useEffect(() => {
+		fetch('doctors.json')
+			.then(res => res.json())
+			.then(data => setDoctors(data));
+	}, []);
+
 	return (
 		<div>
 			<Container>
@@ -16,19 +21,14 @@ const Doctors = () => {
 				</div>
 
 				<div>
-					<Row xs={1} md={3} className="g-4">
+					<Row xs={2} md={4} className="g-4">
 
-						<Col>
-							<Card>
-								<Card.Img variant="top" src={image} />
-								<Card.Body>
-									<Card.Title className="text-uppercase fw-bold theme-primary-text">{title}</Card.Title>
-									<Card.Text>{description}</Card.Text>
-
-									<button className="theme-primary-btn">View Details</button>
-								</Card.Body>
-							</Card>
-						</Col>
+						{
+							doctors.map(doctor => <Doctor
+								key={doctor.id}
+								doctor={doctor}
+							></Doctor>)
+						}
 
 					</Row>
 				</div>

@@ -3,7 +3,7 @@ import healthcareBanner from '../../../images/health-care-banner.jpg';
 
 const HealthcareBanner = () => {
 	return (
-		<div className="d-flex my-5 py-5">
+		<div className="d-flex mb-5">
 
 			{/* Left side of About */}
 			<div>
