@@ -5,6 +5,8 @@ import slider1 from '../../../images/banners/slider-1.png';
 import slider2 from '../../../images/banners/slider-2.jpg';
 import slider3 from '../../../images/banners/slider-3.jpg';
 import About from '../About/About';
+import HealthcareBanner from '../HealthcareBanner/HealthcareBanner';
+import Services from '../Services/Services';
 
 const Home = () => {
 	return (
@@ -62,6 +64,12 @@ const Home = () => {
 
 			{/* About Section */}
 			<About></About>
+
+			{/* Services Section */}
+			<Services></Services>
+
+			{/* HealthCare Banner */}
+			<HealthcareBanner></HealthcareBanner>
 		</main>
 	);
 };

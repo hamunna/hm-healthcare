@@ -11,7 +11,7 @@
 }
 
 .theme-secondary-bg {
-  background-color: crimson;
+  background-color: #f7355c;
 }
 
 .theme-primary-btn {
@@ -31,7 +31,7 @@
 
 .theme-secondary-btn {
   color: #fff;
-  background-color: crimson;
+  background-color: #f7355c;
   padding: 6px 30px;
   border: none;
   outline: none;
