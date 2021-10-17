@@ -18,8 +18,8 @@ const Header = () => {
 						</Nav>
 
 						<Navbar.Collapse className="justify-content-end">
-							<a href="/" className="text-success fw-bolder text-decoration-none">Login</a>
-							<button className="btn btn-danger mx-5">Sign Up</button>
+							<a href="/" className="theme-primary-text fw-bolder text-decoration-none">Login</a>
+							<button className="theme-secondary-btn mx-5">Sign Up</button>
 							<Navbar.Text>
 								Signed in as: <a href="#login">Mark Otto</a>
 							</Navbar.Text>

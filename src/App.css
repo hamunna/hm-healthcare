@@ -2,7 +2,7 @@
   color: #5663c1;
 }
 
-.theme-primarybg {
+.theme-primary-bg {
   background-color: #5663c1;
 }
 
@@ -12,4 +12,33 @@
 
 .theme-secondary-bg {
   background-color: crimson;
+}
+
+.theme-primary-btn {
+  color: #fff;
+  background-color: #5663c1;
+  padding: 6px 30px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  font-weight: 400;
+}
+
+.theme-primary-btn:hover {
+  background-color: #404db6;
+
+}
+
+.theme-secondary-btn {
+  color: #fff;
+  background-color: crimson;
+  padding: 6px 30px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  font-weight: 400;
+}
+
+.theme-secondary-btn:hover {
+  background-color: rgb(180, 10, 44);
 }

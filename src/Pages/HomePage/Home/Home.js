@@ -4,6 +4,7 @@ import { Carousel } from 'react-bootstrap';
 import slider1 from '../../../images/banners/slider-1.png';
 import slider2 from '../../../images/banners/slider-2.jpg';
 import slider3 from '../../../images/banners/slider-3.jpg';
+import About from '../About/About';
 
 const Home = () => {
 	return (
@@ -58,6 +59,9 @@ const Home = () => {
 				</Carousel>
 			</div>
 			{/* Banner Slider END */}
+
+			{/* About Section */}
+			<About></About>
 		</main>
 	);
 };

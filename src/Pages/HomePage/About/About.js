@@ -5,17 +5,25 @@ const About = () => {
 	return (
 		<div>
 			<Container>
-				<div className="d-flex">
+				<div className="d-flex gap-3 my-5 py-5">
+
+					{/* Left side of About */}
 					<div>
-						<h5 className="text-uppercase text-secondary fw-bolder">Aout us</h5>
+						<h5 className="text-uppercase text-secondary fw-bolder">About us</h5>
 						<h2 className="text-uppercase">the world's best treatment in our hospital</h2>
 
-						<h5 className="theme-primary-text">Health services consist of medical professionals, organizations, and ancillary health</h5>
+						<h4 className="theme-primary-text">Health services consist of medical professionals, organizations, and ancillary health</h4>
 
-						<p className="text-secondary">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa hic sint ex, officia autem magni amet sit explicabo molestias quod deleniti consequuntur deserunt nihil corrupti perferendis temporibus nam error soluta.</p>
+						<p className="text-secondary">Medical professionals, organizations, and ancillary health care workers who provide medical care to those in need. Health services serve patients, families, communities, and populations. These services are centered around making health care accessible, high quality, and patient-centered.</p>
+
+						<button className="theme-primary-btn color-white fw-bold">Know more</button>
 
 					</div>
-					<div></div>
+
+					{/* Right Side of About */}
+					<div>
+						<iframe style={{ border: '3px solid #5663c1', borderRadius: '10px'}} width="560" height="315" src="https://www.youtube.com/embed/cKj94KXmINY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					</div>
 				</div>
 			</Container>
 		</div>
