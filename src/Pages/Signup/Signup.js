@@ -1,4 +1,5 @@
 import React from 'react';
+import { Alert } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import useAuth from '../../hooks/useAuth';
 import './Signup.css';
@@ -12,6 +13,7 @@ const Signup = () => {
 				<div className="form-box">
 					<h2 className="text-uppercase fw-bolder">Sign up</h2>
 
+					{error && <Alert variant="danger">{error}</Alert>}
 					<form onSubmit={handleSignUp}>
 						<input onBlur={handleNameChange} type="text" placeholder="Your Name" required />
 						<input onBlur={handleEmailChange} type="email" placeholder="Your Email" required />
@@ -19,8 +21,6 @@ const Signup = () => {
 							<input onBlur={handlePasswordChange} type="password" placeholder="Password" required />
 							<input onBlur={handleConfirmPasswordChange} type="password" placeholder="Confirm Password" required />
 						</div>
-
-						<h6 className="text-danger">{error}</h6>
 
 						<button className="my-2 theme-primary-btn w-100" type="submit">Create Account</button>
 

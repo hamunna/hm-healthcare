@@ -46,22 +46,6 @@ const useFirebase = () => {
 	// Events Hnadling
 	//==================
 
-	// SignUp Handling
-	const handleSignUp = e => {
-		e.preventDefault();
-		console.log(name, email, password);
-
-		const passwordValidation = /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/;
-		if (!passwordValidation.test(password)) {
-			setError('Password must be 8 character with letter & number combination');
-			return;
-		} else if (password !== confirmPassword) {
-			setError("Password doesn't match!");
-			return;
-		}
-		isLogin ? processLogin(email, password) : createNewUser(email, password);
-	}
-
 	// Name Field Handling
 	const handleNameChange = e => {
 		setName(e.target.value);
@@ -83,13 +67,36 @@ const useFirebase = () => {
 		setConfirmPassword(e.target.value);
 	}
 
+	// SignUp Handling
+	const handleSignUp = e => {
+		e.preventDefault();
+		console.log(name, email, password);
+
+		const passwordValidation = /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/;
+		if (!passwordValidation.test(password)) {
+			setError('Password must be 8 character with letter & number combination');
+			return;
+		} else if (password !== confirmPassword) {
+			setError("Password doesn't match!");
+			return;
+		}
+		createNewUser(email, password);
+	}
+
+	// Login Handle
+	const handleLogin = e => {
+		e.preventDefault();
+		processLogin(email, password);
+	}
+
+
 	// Create New User
 	const createNewUser = (email, password) => {
 		createUserWithEmailAndPassword(auth, email, password)
 			.then(result => {
 				const user = result.user;
 				console.log(user);
-				setError('');
+				// setError('');
 				setUserName();
 				verifyEmail();
 			})
@@ -98,11 +105,11 @@ const useFirebase = () => {
 
 	// Login Process
 	const processLogin = (email, password) => {
-		signInWithEmailAndPassword(auth, name, email, password)
+		signInWithEmailAndPassword(auth, email, password)
 			.then(result => {
 				const user = result.user;
 				console.log(user);
-				setError('');
+				// setError('');
 			})
 			.catch(error => setError(error.message));
 	}
@@ -134,7 +141,7 @@ const useFirebase = () => {
 		handleEmailChange,
 		handlePasswordChange,
 		handleConfirmPasswordChange,
-		processLogin
+		handleLogin
 		
 	}
 }
