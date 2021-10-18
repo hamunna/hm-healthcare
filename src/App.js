@@ -22,8 +22,8 @@ function App() {
       <Home></Home>
       <Footer></Footer> */}
 
-      {/* <Signup></Signup> */}
-      <Login></Login>
+      <Signup></Signup>
+      {/* <Login></Login> */}
 
     </div>
   );
