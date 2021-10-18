@@ -4,7 +4,7 @@ import './GetOffers.css';
 
 const GetOffers = () => {
 	return (
-		<div className="theme-primary-bg my-5 py-4">
+		<div className="theme-primary-bg py-4">
 			<Container>
 				<div className="d-flex align-items-center justify-content-evenly">
 					<div>

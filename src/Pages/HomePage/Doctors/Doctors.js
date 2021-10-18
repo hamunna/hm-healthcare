@@ -15,7 +15,7 @@ const Doctors = () => {
 		<div className="my-5">
 			<Container>
 				<div className="text-center my-5">
-					<h2 className="theme-primary-text text-uppercase fw-bold">Our Best Doctor</h2>
+					<h2 className="theme-primary-text text-uppercase fw-bold">Our Best Doctors</h2>
 					<p className="text-secondary">Medical professionals, organizations, and ancillary health care
 						<br /> workers who provide medical care</p>
 				</div>

@@ -4,6 +4,14 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Home from './Pages/HomePage/Home/Home';
 import Footer from './Pages/Footer/Footer';
 
+// ========
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faCoffee } from '@fortawesome/free-solid-svg-icons'
+
+const element = <FontAwesomeIcon icon={faCoffee} />
+// ========
+
+
 function App() {
   return (
     <div>

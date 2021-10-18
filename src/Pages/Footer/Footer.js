@@ -1,64 +1,68 @@
 import React from 'react';
-import { Card, Container, Row } from 'react-bootstrap';
+import { Container } from 'react-bootstrap';
+import './Footer.css';
 
 const Footer = () => {
 	return (
 		<footer>
 			<Container>
-				<Row xs={2} md={4} className="g-4">
+				<div className="d-flex justify-content-between py-4">
 
 					{/* Address and Social Icons */}
-					<Card>
+					<div>
 
 						<h5 className="fw-bolder">HM-Healthcare</h5>
 						<p><small><strong>Location: </strong>West Zindabazar, Sylhet</small></p>
 						<p><small><strong>Phone: </strong>++8801787654321</small></p>
 						<p><small><strong>Email: </strong>info@hmcare.com</small></p>
-						
+
 						<p><small><strong>Social Icons will go here...</strong></small></p>
 
-					</Card>
+					</div>
 
 					{/* Health Support */}
-					<Card>
+					<div>
 
 						<h5 className="fw-bolder">Support</h5>
-						<p><small><strong><a href="#" className="text-decoration-none text-dark">Health Center</a></strong></small></p>
-						<p><small><strong><a href="#" className="text-decoration-none text-dark">Terms of Service</a></strong></small></p>
-						<p><small><strong><a href="#" className="text-decoration-none text-dark">Privacy Policy</a></strong></small></p>
-						<p><small><strong><a href="#" className="text-decoration-none text-dark">Our Pricing</a></strong></small></p>
-						<p><small><strong><a href="#" className="text-decoration-none text-dark">Testimonials</a></strong></small></p>
+						<p><small><a href="#" className="text-decoration-none text-white">Health Center</a></small></p>
+						<p><small><a href="#" className="text-decoration-none text-white">Terms of Service</a></small></p>
+						<p><small><a href="#" className="text-decoration-none text-white">Privacy Policy</a></small></p>
+						<p><small><a href="#" className="text-decoration-none text-white">Our Pricing</a></small></p>
+						<p><small><a href="#" className="text-decoration-none text-white">Testimonials</a></small></p>
 
-					</Card>
+					</div>
 
 					{/* Services */}
-					<Card>
+					<div>
 
 						<h5 className="fw-bolder">Services</h5>
-						<p><small><strong><a href="#" className="text-decoration-none text-dark">Cosmetic Surgery</a></strong></small></p>
-						<p><small><strong><a href="#" className="text-decoration-none text-dark">General Surgery</a></strong></small></p>
-						<p><small><strong><a href="#" className="text-decoration-none text-dark">Authorized Diagonostic</a></strong></small></p>
-						<p><small><strong><a href="#" className="text-decoration-none text-dark">New Technology</a></strong></small></p>
-						<p><small><strong><a href="#" className="text-decoration-none text-dark">Accept Insurance</a></strong></small></p>
+						<p><small><a href="#" className="text-decoration-none text-white">Cosmetic Surgery</a></small></p>
+						<p><small><a href="#" className="text-decoration-none text-white">General Surgery</a></small></p>
+						<p><small><a href="#" className="text-decoration-none text-white">Authorized Diagonostic</a></small></p>
+						<p><small><a href="#" className="text-decoration-none text-white">New Technology</a></small></p>
+						<p><small><a href="#" className="text-decoration-none text-white">Accept Insurance</a></small></p>
 
-					</Card>
+					</div>
 
 					{/* Useful Links */}
-					<Card>
+					<div>
 
 						<h5 className="fw-bolder">Useful Links</h5>
-						<p><small><strong><a href="#" className="text-decoration-none text-dark">About Us</a></strong></small></p>
-						<p><small><strong><a href="#" className="text-decoration-none text-dark">Our Services</a></strong></small></p>
-						<p><small><strong><a href="#" className="text-decoration-none text-dark">Appointment</a></strong></small></p>
-						<p><small><strong><a href="#" className="text-decoration-none text-dark">Treatment Policy</a></strong></small></p>
-						<p><small><strong><a href="#" className="text-decoration-none text-dark">Contact Us</a></strong></small></p>
+						<p><small><a href="#" className="text-decoration-none text-white">About Us</a></small></p>
+						<p><small><a href="#" className="text-decoration-none text-white">Our Services</a></small></p>
+						<p><small><a href="#" className="text-decoration-none text-white">Appointment</a></small></p>
+						<p><small><a href="#" className="text-decoration-none text-white">Treatment Policy</a></small></p>
+						<p><small><a href="#" className="text-decoration-none text-white">Contact Us</a></small></p>
 
-					</Card>
+					</div>
 
-				</Row>
+				</div>
 
-				<div className="my-3 border-top-1 text-center">
-					<p>Copyright &copy; 2021 &bullet; HM-Healthcare all rights reserved.</p>
+			</Container>
+
+			<Container>
+				<div className="py-3 border-top-1 text-center border-top border-secondary">
+					<p>Copyright &copy; 2021 &bull; HM-Healthcare &bull; all rights reserved.</p>
 				</div>
 			</Container>
 		</footer>
