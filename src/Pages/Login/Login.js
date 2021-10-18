@@ -1,6 +1,8 @@
 import React from 'react';
+import useFirebase from '../../hooks/useFirebase';
 
 const Login = () => {
+	const { signInUsingGoogle } = useFirebase();
 	return (
 		<div className="sign-form">
 			<div className="signing-overlay d-flex justify-content-center align-items-center">
@@ -13,12 +15,12 @@ const Login = () => {
 
 						<button className="my-2 theme-primary-btn w-100" type="submit">Create Account</button>
 
-						<p>Not a member? <a href="#">Sign up</a></p>
+						<p>Not a member? <a href="/signup">Sign up</a></p>
 					</form>
 
 					<div className="or-sign-with"> or </div>
 
-					<button className="my-2 theme-secondary-btn text-uppercase w-100">Login with Google</button>
+					<button onClick={signInUsingGoogle} className="my-2 theme-secondary-btn text-uppercase w-100">Sign in with Google</button>
 				</div>
 			</div>
 		</div>

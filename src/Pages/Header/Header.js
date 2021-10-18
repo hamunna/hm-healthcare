@@ -1,8 +1,11 @@
 import React from 'react';
 import { Container, Nav, Navbar } from 'react-bootstrap';
 import { HashLink } from 'react-router-hash-link';
+import { Link } from "react-router-dom";
+import useFirebase from '../../hooks/useFirebase';
 
 const Header = () => {
+	const { user, logOut } = useFirebase();
 	return (
 		<header>
 			<Navbar bg="light" expand="lg" fixed="top">
@@ -18,17 +21,25 @@ const Header = () => {
 							<Nav.Link as={HashLink} to="/home#doctors">Doctors</Nav.Link>
 						</Nav>
 
-						<Navbar.Collapse className="justify-content-end">
+						<div className="d-flex justify-content-end">
+							{user?.email ?
 
-							<Nav.Link as={HashLink} to="/login">
-								<a className="theme-primary-text fw-bolder text-decoration-none">Login</a>
-							</Nav.Link>
+								<span>
+									<Navbar.Text>
+										Signed in as: <a href="#login">{user.displayName}</a>
+										<img style={{width: '30px', borderRadius: '50%'}} className="mx-3" src={user.photoURL} alt="" />
+									</Navbar.Text>
 
-							<button className="theme-secondary-btn mx-5">Sign Up</button>
-							<Navbar.Text>
-								Signed in as: <a href="#login">Mark Otto</a>
-							</Navbar.Text>
-						</Navbar.Collapse>
+									<Link onClick={logOut} className="theme-secondary-text fw-bolder text-decoration-none mx-4" to="/home">LogOut</Link>
+								</span>
+								:
+								<span>
+									<Link className="theme-primary-text fw-bolder text-decoration-none" to="/login">Login</Link>
+
+									<Link to="/signup"><button className="theme-secondary-btn mx-5">Sign Up</button></Link>
+
+								</span>}
+						</div>
 					</Navbar.Collapse>
 				</Container>
 			</Navbar>

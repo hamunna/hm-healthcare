@@ -1,5 +1,6 @@
 import React from 'react';
 import { Container } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 import './Footer.css';
 
 const Footer = () => {
@@ -11,7 +12,7 @@ const Footer = () => {
 					{/* Address and Social Icons */}
 					<div>
 
-						<h5 className="fw-bolder">HM-Healthcare</h5>
+					<Link to="#home" className="text-decoration-none"><h4 className="theme-primary-text fw-bolder"><span className="theme-secondary-text">HM-</span>Healthcare</h4></Link>
 						<p><small><strong>Location: </strong>West Zindabazar, Sylhet</small></p>
 						<p><small><strong>Phone: </strong>++8801787654321</small></p>
 						<p><small><strong>Email: </strong>info@hmcare.com</small></p>

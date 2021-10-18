@@ -22,7 +22,7 @@ const About = () => {
 
 					{/* Right Side of About */}
 					<div>
-						<iframe style={{ border: '3px solid #5663c1', borderRadius: '10px'}} width="560" height="315" src="https://www.youtube.com/embed/cKj94KXmINY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						<iframe style={{ border: '3px solid #5663c1', borderRadius: '10px'}} width="560" height="315" src="https://www.youtube.com/embed/cKj94KXmINY" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
 					</div>
 				</div>
 			</Container>
