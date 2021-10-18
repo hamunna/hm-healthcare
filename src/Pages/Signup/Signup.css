@@ -1,0 +1,46 @@
+.sign-form {
+	background-image: url('../../images/signup-bg.jpg');
+	background-size: cover;
+	height: 657px;
+	width: 100%;
+}
+
+.signing-overlay {
+	background-color: rgba(0, 0, 0, 0.9);
+	height: 657px;
+	width: 100%;
+}
+
+.sign-form form input {
+	display: block;
+	margin: 14px auto;
+	width: 100%;
+	height: 38px;
+	border: none;
+	outline: none;
+	border-bottom: 1px solid #ccc;
+}
+
+.form-box {
+	background-color: #fff;
+	width: 380px;
+	height: 460px;
+	padding: 20px;
+	text-align: center;
+	border-radius: 10px;
+}
+
+.or-sign-with::after {
+	content: '';
+	display: inline-block;
+	border-bottom: 1px solid #ccc;
+	width: 100px;
+	padding: 5px;
+}
+.or-sign-with::before {
+	content: '';
+	display: inline-block;
+	border-bottom: 1px solid #ccc;
+	width: 100px;
+	padding: 5px;
+}

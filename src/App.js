@@ -7,6 +7,7 @@ import Footer from './Pages/Footer/Footer';
 // ========
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCoffee } from '@fortawesome/free-solid-svg-icons'
+import Signup from './Pages/Signup/Signup';
 
 const element = <FontAwesomeIcon icon={faCoffee} />
 // ========
@@ -16,9 +17,11 @@ function App() {
   return (
     <div>
       
-      <Header></Header>
+      {/* <Header></Header>
       <Home></Home>
-      <Footer></Footer>
+      <Footer></Footer> */}
+
+      <Signup></Signup>
 
     </div>
   );
