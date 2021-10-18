@@ -8,6 +8,7 @@ import Footer from './Pages/Footer/Footer';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCoffee } from '@fortawesome/free-solid-svg-icons'
 import Signup from './Pages/Signup/Signup';
+import Login from './Pages/Login/Login';
 
 const element = <FontAwesomeIcon icon={faCoffee} />
 // ========
@@ -21,7 +22,8 @@ function App() {
       <Home></Home>
       <Footer></Footer> */}
 
-      <Signup></Signup>
+      {/* <Signup></Signup> */}
+      <Login></Login>
 
     </div>
   );
