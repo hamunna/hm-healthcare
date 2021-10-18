@@ -17,6 +17,10 @@ import {
 // ========
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCoffee } from '@fortawesome/free-solid-svg-icons'
+import AuthProvider from './Context/AuthProvider';
+import useAuth from './hooks/useAuth';
+import Doctors from './Pages/HomePage/Doctors/Doctors';
+import PrivateRoute from './Private/PrivateRoute';
 
 const element = <FontAwesomeIcon icon={faCoffee} />
 // ========
@@ -24,7 +28,7 @@ const element = <FontAwesomeIcon icon={faCoffee} />
 
 function App() {
   return (
-    <>
+    <AuthProvider>
       <Router>
 
         <Header></Header>
@@ -46,6 +50,10 @@ function App() {
             <Login></Login>
           </Route>
 
+          <PrivateRoute path="/doctors">
+            <Doctors></Doctors>
+          </PrivateRoute>
+
           <Route path="*">
             <NotFound></NotFound>
           </Route>
@@ -54,7 +62,7 @@ function App() {
         <Footer></Footer>
 
       </Router>
-    </>
+    </AuthProvider>
   );
 }
 

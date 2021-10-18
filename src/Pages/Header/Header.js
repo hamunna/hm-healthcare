@@ -3,9 +3,10 @@ import { Container, Nav, Navbar } from 'react-bootstrap';
 import { HashLink } from 'react-router-hash-link';
 import { Link } from "react-router-dom";
 import useFirebase from '../../hooks/useFirebase';
+import useAuth from '../../hooks/useAuth';
 
 const Header = () => {
-	const { user, logOut } = useFirebase();
+	const { user, logOut } = useAuth();
 	return (
 		<header>
 			<Navbar bg="light" expand="lg" fixed="top">
@@ -19,6 +20,7 @@ const Header = () => {
 							<Nav.Link as={HashLink} to="/home#about">About us</Nav.Link>
 							<Nav.Link as={HashLink} to="/home#services">Services</Nav.Link>
 							<Nav.Link as={HashLink} to="/home#doctors">Doctors</Nav.Link>
+							<Link to="/doctors">DOCTORS</Link>
 						</Nav>
 
 						<div className="d-flex justify-content-end">
@@ -26,11 +28,11 @@ const Header = () => {
 
 								<span>
 									<Navbar.Text>
-										Signed in as: <a href="#login">{user.displayName}</a>
-										<img style={{width: '30px', borderRadius: '50%'}} className="mx-3" src={user.photoURL} alt="" />
+										Signed in as: <Link to="/profile" className="mx-2">{user.displayName}</Link>
+										<img style={{width: '30px', borderRadius: '50%'}} className="mx-2" src={user.photoURL} alt="" />
 									</Navbar.Text>
 
-									<Link onClick={logOut} className="theme-secondary-text fw-bolder text-decoration-none mx-4" to="/home">LogOut</Link>
+									<Link onClick={logOut} className="theme-secondary-text fw-bolder text-decoration-none ml-1" to="/home">LogOut</Link>
 								</span>
 								:
 								<span>

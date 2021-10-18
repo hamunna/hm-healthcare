@@ -1,9 +1,10 @@
 import React from 'react';
+import useAuth from '../../hooks/useAuth';
 import useFirebase from '../../hooks/useFirebase';
 import './Signup.css';
 
 const Signup = () => {
-	const { signInUsingGoogle } = useFirebase();
+	const { error, signInUsingGoogle, handleShignUp, handleNameChange, handleEmailChange, handlePasswordChange, setConfirmPassword } = useAuth();
 
 	return (
 		<div className="sign-form">
@@ -11,13 +12,15 @@ const Signup = () => {
 				<div className="form-box">
 					<h2 className="text-uppercase fw-bolder">Sign up</h2>
 
-					<form>
-						<input type="text" placeholder="Your Name" />
-						<input type="email" placeholder="Your Email" />
+					<form onSubmit={handleShignUp}>
+						<input onBlur={handleNameChange} type="text" placeholder="Your Name" required />
+						<input onBlur={handleEmailChange} type="email" placeholder="Your Email" required />
 						<div className="d-flex gap-4">
-							<input type="password" placeholder="Password" />
-							<input type="password" placeholder="Confirm Password" />
+							<input onBlur={handlePasswordChange} type="password" placeholder="Password" required />
+							<input onBlur={setConfirmPassword} type="password" placeholder="Confirm Password" required />
 						</div>
+
+						<h6 className="text-danger">{error}</h6>
 
 						<button className="my-2 theme-primary-btn w-100" type="submit">Create Account</button>
 
