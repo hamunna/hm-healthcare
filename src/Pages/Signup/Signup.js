@@ -2,10 +2,22 @@ import React from 'react';
 import { Alert } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import useAuth from '../../hooks/useAuth';
+import { useHistory, useLocation } from "react-router-dom";
 import './Signup.css';
 
 const Signup = () => {
 	const { error, signInUsingGoogle, handleSignUp, handleNameChange, handleEmailChange, handlePasswordChange, handleConfirmPasswordChange } = useAuth();
+
+	const history = useHistory();
+	const location = useLocation();
+	const redirect_uri = location.state?.from || '/home';
+
+	const handleGoogleLogin = () => {
+		signInUsingGoogle()
+			.then(result => {
+				history.push(redirect_uri);
+			});
+	}
 
 	return (
 		<div className="sign-form">
@@ -29,7 +41,7 @@ const Signup = () => {
 
 					<div className="or-sign-with d-flex align-items-center gap-3">or</div>
 
-					<button onClick={signInUsingGoogle} className="my-2 theme-secondary-btn text-uppercase w-100">Sign in with Google</button>
+					<button onClick={handleGoogleLogin} className="my-2 theme-secondary-btn text-uppercase w-100">Sign in with Google</button>
 				</div>
 			</div>
 		</div>

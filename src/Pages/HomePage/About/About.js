@@ -3,7 +3,7 @@ import { Container } from 'react-bootstrap';
 
 const About = () => {
 	return (
-		<div id="about">
+		<div id="about" style={{paddingTop: '1px'}}>
 			<Container>
 				<div className="d-flex gap-3 my-5 py-5">
 

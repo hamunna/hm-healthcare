@@ -11,18 +11,15 @@ const useFirebase = () => {
 	const [password, setPassword] = useState('');
 	const [confirmPassword, setConfirmPassword] = useState('');
 	const [error, setError] = useState('');
-	const [isLogin, setIsLogin] = useState(false);
+	// const [isLogin, setIsLogin] = useState(false);
 
 	const googleProvider = new GoogleAuthProvider();
 	const auth = getAuth();
 
 	// Sign In Using Google Acctount
 	const signInUsingGoogle = () => {
-		signInWithPopup(auth, googleProvider)
-			.then(result => {
-				setUser(result.user);
-				console.log(result.user);
-			});
+		return signInWithPopup(auth, googleProvider)
+
 	}
 
 	// On Auth State Change to Observe user State
@@ -95,12 +92,11 @@ const useFirebase = () => {
 		createUserWithEmailAndPassword(auth, email, password)
 			.then(result => {
 				const user = result.user;
-				console.log(user);
-				// setError('');
+				setError('');
 				setUserName();
 				verifyEmail();
 			})
-		.catch(error => setError(error.message))
+			.catch(error => setError(error.message))
 	}
 
 	// Login Process
@@ -108,17 +104,16 @@ const useFirebase = () => {
 		signInWithEmailAndPassword(auth, email, password)
 			.then(result => {
 				const user = result.user;
-				console.log(user);
-				// setError('');
+				setError('');
 			})
-			.catch(error => setError(error.message));
+			.catch(setError("Incorrect Email or Password!"));
 	}
 
 	// Email Veryfing
 	const verifyEmail = () => {
 		sendEmailVerification(auth.currentUser)
 			.then(result => {
-			console.log(result)
+				console.log(result)
 			})
 			.catch(error => setError(error.message));
 	}
@@ -128,7 +123,7 @@ const useFirebase = () => {
 		updateProfile(auth.currentUser, { displayName: name })
 			.then(result => { })
 			.catch(error => setError(error.message));
-	  }
+	}
 
 
 	return {
@@ -142,7 +137,7 @@ const useFirebase = () => {
 		handlePasswordChange,
 		handleConfirmPasswordChange,
 		handleLogin
-		
+
 	}
 }
 

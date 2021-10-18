@@ -8,7 +8,7 @@ const Header = () => {
 	const { user, name, logOut } = useAuth();
 	return (
 		<header>
-			<Navbar bg="light" expand="lg" fixed="top">
+			<Navbar bg="light" expand="lg" fixed="top" style={{borderBottom: '2px solid #404db6'}}>
 				<Container>
 					<Navbar.Brand to="#home"><h4 className="theme-primary-text fw-bolder"><span className="theme-secondary-text">HM-</span>Healthcare</h4></Navbar.Brand>
 					<Navbar.Toggle aria-controls="basic-navbar-nav" />

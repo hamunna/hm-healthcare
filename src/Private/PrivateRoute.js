@@ -1,18 +1,12 @@
 import React from 'react';
 import {
-	BrowserRouter as Router,
-	Switch,
 	Route,
-	Link,
-	Redirect,
-	useHistory,
-	useLocation
+	Redirect
 } from "react-router-dom";
 import useAuth from '../hooks/useAuth';
 
 const PrivateRoute = ({ children, ...rest }) => {
-	let history = useHistory();
-  let location = useLocation();
+
 	const {user} = useAuth();
 	return (
 		<Route

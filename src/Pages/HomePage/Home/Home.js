@@ -12,7 +12,7 @@ import Services from '../Services/Services';
 
 const Home = () => {
 	return (
-		<main id="home">
+		<main id="home" style={{paddingTop: '60px'}}>
 
 			{/* Banner Slider Start */}
 			<div>
