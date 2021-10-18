@@ -2,11 +2,10 @@ import React from 'react';
 import { Container, Nav, Navbar } from 'react-bootstrap';
 import { HashLink } from 'react-router-hash-link';
 import { Link } from "react-router-dom";
-import useFirebase from '../../hooks/useFirebase';
 import useAuth from '../../hooks/useAuth';
 
 const Header = () => {
-	const { user, logOut } = useAuth();
+	const { user, name, logOut } = useAuth();
 	return (
 		<header>
 			<Navbar bg="light" expand="lg" fixed="top">
@@ -28,7 +27,7 @@ const Header = () => {
 
 								<span>
 									<Navbar.Text>
-										Signed in as: <Link to="/profile" className="mx-2">{user.displayName}</Link>
+										Signed in as: <Link to="/profile" className="mx-2">{user.displayName || name}</Link>
 										<img style={{width: '30px', borderRadius: '50%'}} className="mx-2" src={user.photoURL} alt="" />
 									</Navbar.Text>
 

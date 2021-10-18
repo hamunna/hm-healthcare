@@ -1,22 +1,22 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import useAuth from '../../hooks/useAuth';
-import useFirebase from '../../hooks/useFirebase';
 
 const Login = () => {
-	const { error, signInUsingGoogle, handleShignUp, handleEmailChange, handlePasswordChange } = useAuth();
+	const { error, signInUsingGoogle, handleSignUp, handleEmailChange, handlePasswordChange } = useAuth();
 	return (
 		<div className="sign-form">
 			<div className="signing-overlay d-flex justify-content-center align-items-center">
 				<div className="form-box">
 					<h2 className="text-uppercase fw-bolder">Login</h2>
 
-					<form onSubmit={handleShignUp}>
+					<form onSubmit={handleSignUp}>
 						<input onBlur={handleEmailChange} type="email" placeholder="Your Email" required />
 						<input onBlur={handlePasswordChange} type="password" placeholder="Password" required />
 
 						<button className="my-2 theme-primary-btn w-100" type="submit">Login</button>
 
-						<p>Not a member? <a href="/signup">Sign up</a></p>
+						<p>Not a member? <Link to="/signup">Sign up</Link></p>
 					</form>
 
 					<div className="or-sign-with"> or </div>

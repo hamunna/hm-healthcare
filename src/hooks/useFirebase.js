@@ -47,17 +47,19 @@ const useFirebase = () => {
 	//==================
 
 	// SignUp Handling
-	const handleShignUp = e => {
+	const handleSignUp = e => {
 		e.preventDefault();
 		console.log(name, email, password);
 
 		const passwordValidation = /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/;
 		if (!passwordValidation.test(password)) {
-			setError('Password must be 8 character with letter & number combination')
+			setError('Password must be 8 character with letter & number combination');
+			return;
 		} else if (password !== confirmPassword) {
-			setError("Password doesn't match!")
+			setError("Password doesn't match!");
+			return;
 		}
-		isLogin ? processLogin(email, password) : createNewUser(name, email, password);
+		isLogin ? processLogin(email, password) : createNewUser(email, password);
 	}
 
 	// Name Field Handling
@@ -68,11 +70,17 @@ const useFirebase = () => {
 	// Email Field Handling
 	const handleEmailChange = e => {
 		setEmail(e.target.value);
+		console.log(e.target.value);
 	}
 
 	// Password Field Handling
 	const handlePasswordChange = e => {
 		setPassword(e.target.value);
+	}
+
+	// Confirm Password Field Handling
+	const handleConfirmPasswordChange = e => {
+		setConfirmPassword(e.target.value);
 	}
 
 	// Create New User
@@ -85,17 +93,18 @@ const useFirebase = () => {
 				setUserName();
 				verifyEmail();
 			})
-		.catch(error => {console.log(error.message)})
+		.catch(error => setError(error.message))
 	}
 
 	// Login Process
 	const processLogin = (email, password) => {
-		signInWithEmailAndPassword(auth, email, password)
+		signInWithEmailAndPassword(auth, name, email, password)
 			.then(result => {
 				const user = result.user;
 				console.log(user);
 				setError('');
-		})
+			})
+			.catch(error => setError(error.message));
 	}
 
 	// Email Veryfing
@@ -103,13 +112,15 @@ const useFirebase = () => {
 		sendEmailVerification(auth.currentUser)
 			.then(result => {
 			console.log(result)
-		})
+			})
+			.catch(error => setError(error.message));
 	}
 
 	// Set UserName
 	const setUserName = () => {
 		updateProfile(auth.currentUser, { displayName: name })
-		  .then(result => { });
+			.then(result => { })
+			.catch(error => setError(error.message));
 	  }
 
 
@@ -118,11 +129,12 @@ const useFirebase = () => {
 		error,
 		signInUsingGoogle,
 		logOut,
-		handleShignUp,
+		handleSignUp,
 		handleNameChange,
 		handleEmailChange,
 		handlePasswordChange,
-		setConfirmPassword,
+		handleConfirmPasswordChange,
+		processLogin
 		
 	}
 }
