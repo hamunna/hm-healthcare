@@ -12,7 +12,7 @@ const Services = () => {
 	}, []);
 
 	return (
-		<div style={{ backgroundColor: '#f2f2f2' }} className="py-5">
+		<div id="services" style={{ backgroundColor: '#f2f2f2' }} className="py-5">
 			<Container>
 				<div className="text-center mb-5">
 					<h2 className="theme-primary-text text-uppercase fw-bold">Our Services</h2>

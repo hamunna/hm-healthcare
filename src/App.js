@@ -1,14 +1,22 @@
 import './App.css';
-import Header from './Pages/Header/Header';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Header from './Pages/Header/Header';
 import Home from './Pages/HomePage/Home/Home';
+import Signup from './Pages/Signup/Signup';
+import Login from './Pages/Login/Login';
+import NotFound from './Pages/NotFound/NotFound';
 import Footer from './Pages/Footer/Footer';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  useRouteMatch,
+  useParams
+} from "react-router-dom";
 
 // ========
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCoffee } from '@fortawesome/free-solid-svg-icons'
-import Signup from './Pages/Signup/Signup';
-import Login from './Pages/Login/Login';
 
 const element = <FontAwesomeIcon icon={faCoffee} />
 // ========
@@ -16,16 +24,37 @@ const element = <FontAwesomeIcon icon={faCoffee} />
 
 function App() {
   return (
-    <div>
-      
-      {/* <Header></Header>
-      <Home></Home>
-      <Footer></Footer> */}
+    <>
+      <Router>
 
-      <Signup></Signup>
-      {/* <Login></Login> */}
+        <Header></Header>
+        <Switch>
 
-    </div>
+          <Route exact path="">
+            <Home></Home>
+          </Route>
+
+          <Route path="/home">
+            <Home></Home>
+          </Route>
+
+          <Router path="/signup">
+            <Signup></Signup>
+          </Router>
+
+          <Route path="/login">
+            <Login></Login>
+          </Route>
+
+          <Route path="*">
+            <NotFound></NotFound>
+          </Route>
+
+        </Switch>
+        <Footer></Footer>
+
+      </Router>
+    </>
   );
 }
 
