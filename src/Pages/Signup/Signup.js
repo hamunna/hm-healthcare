@@ -10,14 +10,14 @@ const Signup = () => {
 
 	const history = useHistory();
 	const location = useLocation();
-	const redirect_uri = location.state?.from || '/home';
+	const redirect_uri = location.state?.from || '/';
 
 	const handleGoogleLogin = () => {
 		signInUsingGoogle()
 			.then(result => {
 				history.push(redirect_uri);
 			})
-			.finally(()=> setIsLoading(false));
+			.finally(() => setIsLoading(false));
 	}
 
 	return (
@@ -37,8 +37,8 @@ const Signup = () => {
 
 						<button className="my-2 theme-primary-btn w-100" type="submit">Create Account</button>
 
+						<p>Not a member? <Link to="/login" className="text-decoration-none theme-primary-text fw-bold">Login</Link></p>
 					</form>
-						<p>Not a member? <Link to="/login">Login</Link></p>
 
 					<div className="or-sign-with">or</div>
 

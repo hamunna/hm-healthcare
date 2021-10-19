@@ -18,6 +18,7 @@ const Login = () => {
 			})
 			.finally(()=> setIsLoading(false))
 	}
+	
 
 	return (
 		<div className="sign-form">
@@ -34,7 +35,7 @@ const Login = () => {
 
 						<button className="my-2 theme-primary-btn w-100" type="submit">Login</button>
 
-						<p>Not a member? <Link to="/signup">Sign up</Link></p>
+						<p>Not a member? <Link to="/signup" className="text-decoration-none theme-primary-text fw-bold">Sign up</Link></p>
 					</form>
 
 					<div className="or-sign-with"> or </div>

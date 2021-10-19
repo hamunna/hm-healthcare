@@ -11,7 +11,7 @@ const useFirebase = () => {
 	const [password, setPassword] = useState('');
 	const [confirmPassword, setConfirmPassword] = useState('');
 	const [error, setError] = useState('');
-	const [isLoading, setIsLoading] = useState(false);
+	const [isLoading, setIsLoading] = useState(true);
 
 	const googleProvider = new GoogleAuthProvider();
 	const auth = getAuth();
@@ -33,6 +33,7 @@ const useFirebase = () => {
 			}
 		})
 		return () => unsubscribeed;
+
 	}, []);
 
 	const logOut = () => {
@@ -54,7 +55,6 @@ const useFirebase = () => {
 	// Email Field Handling
 	const handleEmailChange = e => {
 		setEmail(e.target.value);
-		console.log(e.target.value);
 	}
 
 	// Password Field Handling
@@ -70,7 +70,6 @@ const useFirebase = () => {
 	// SignUp Handling
 	const handleSignUp = e => {
 		e.preventDefault();
-		console.log(name, email, password);
 
 		const passwordValidation = /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/;
 		if (!passwordValidation.test(password)) {
@@ -80,15 +79,15 @@ const useFirebase = () => {
 			setError("Password doesn't match!");
 			return;
 		}
-		createNewUser(email, password);
 		setIsLoading(false);
+		createNewUser(email, password);
 	}
 
 	// Login Handle
 	const handleLogin = e => {
 		e.preventDefault();
-		processLogin(email, password);
 		setIsLoading(false);
+		processLogin(email, password);
 	}
 
 

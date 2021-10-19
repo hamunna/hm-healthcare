@@ -29,7 +29,7 @@ const Header = () => {
 
 								<span>
 									<Navbar.Text>
-										<span className="text-danger fw-bold">Hey:</span> <Link to="/profile" className="mx-2 text-success">{user.displayName}</Link>
+										<span className="text-danger fw-bold">Hey:</span> <Link to="/profile" className="mx-2 text-success">{user?.displayName || user?.email}</Link>
 										<img style={{width: '30px', borderRadius: '50%'}} className="mx-2" src={user.photoURL} alt="" />
 									</Navbar.Text>
 

@@ -18,15 +18,10 @@ import PrivateRoute from './Private/PrivateRoute';
 import HealthTips from './Pages/PrivatePages/HealthTips/HealthTips';
 import ServiceDetails from './Pages/PrivatePages/ServiceDetails/ServiceDetails';
 import CovidData from './Pages/PrivatePages/CovidData/CovidData';
-
-/* // ========
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCoffee } from '@fortawesome/free-solid-svg-icons';
-const element = <FontAwesomeIcon icon={faCoffee} />
-// ======== */
-
+import useAuth from './hooks/useAuth';
 
 function App() {
+  // const { user } = useAuth();
   return (
     <AuthProvider>
       <Router>
@@ -42,13 +37,14 @@ function App() {
             <Home></Home>
           </Route>
 
-          <Router path="/signup">
-            <Signup></Signup>
-          </Router>
-
-          <Route path="/login">
+          <Route exact path="/login">
             <Login></Login>
           </Route>
+
+          <Route exact path="/signup">
+            <Signup></Signup>
+          </Route>
+
 
           <PrivateRoute path="/doctors">
             <Doctors></Doctors>
@@ -57,7 +53,7 @@ function App() {
           <PrivateRoute path="/healthTips">
             <HealthTips></HealthTips>
           </PrivateRoute>
-          
+
           <PrivateRoute path="/covid">
             <CovidData></CovidData>
           </PrivateRoute>
