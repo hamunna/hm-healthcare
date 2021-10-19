@@ -3,15 +3,15 @@ import healthcareBanner from '../../../images/health-care-banner.jpg';
 
 const HealthcareBanner = () => {
 	return (
-		<div className="d-flex mb-5">
+		<div className="d-md-flex d-md-column d-sm-flex flex-sm-row mb-5">
 
 			{/* Left side of About */}
-			<div>
-				<img src={healthcareBanner} alt="" />
+			<div className="w-100">
+				<img className="img-fluid" src={healthcareBanner} alt="" />
 			</div>
 
 			{/* Right Side of About */}
-			<div className="theme-primary-bg text-white p-5">
+			<div className="theme-primary-bg text-white p-5 w-100">
 				<h2 className="fw-bold text-capitalize">the world's best treatment in our hospital</h2>
 
 				<h6 className="my-4 fw-bolder">Health services consist of medical professionals</h6>

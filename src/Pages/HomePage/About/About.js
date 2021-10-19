@@ -5,7 +5,7 @@ const About = () => {
 	return (
 		<div id="about" style={{paddingTop: '1px'}}>
 			<Container>
-				<div className="d-flex gap-3 my-5 py-5">
+				<div className="d-md-flex d-md-column d-sm-flex flex-sm-row gap-3 my-5 py-5">
 
 					{/* Left side of About */}
 					<div>
@@ -16,13 +16,13 @@ const About = () => {
 
 						<p className="text-secondary">Medical professionals, organizations, and ancillary health care workers who provide medical care to those in need. Health services serve patients, families, communities, and populations. These services are centered around making health care accessible, high quality, and patient-centered.</p>
 
-						<button className="theme-primary-btn color-white fw-bold">Know more</button>
+						<button className="theme-primary-btn color-white fw-bold mb-5">Know more</button>
 
 					</div>
 
 					{/* Right Side of About */}
 					<div>
-						<iframe style={{ border: '3px solid #5663c1', borderRadius: '10px'}} width="560" height="315" src="https://www.youtube.com/embed/cKj94KXmINY" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+						<iframe src="https://www.youtube.com/embed/cKj94KXmINY" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
 					</div>
 				</div>
 			</Container>
