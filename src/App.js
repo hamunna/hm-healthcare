@@ -16,8 +16,8 @@ import AuthProvider from './Context/AuthProvider';
 import Doctors from './Pages/HomePage/Doctors/Doctors';
 import PrivateRoute from './Private/PrivateRoute';
 import HealthTips from './Pages/PrivatePages/HealthTips/HealthTips';
-import Covid from './Pages/PrivatePages/Covid/Covid';
 import ServiceDetails from './Pages/PrivatePages/ServiceDetails/ServiceDetails';
+import CovidData from './Pages/PrivatePages/CovidData/CovidData';
 
 /* // ========
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -54,13 +54,13 @@ function App() {
             <Doctors></Doctors>
           </PrivateRoute>
 
-          <Route path="/healthTips">
+          <PrivateRoute path="/healthTips">
             <HealthTips></HealthTips>
-          </Route>
+          </PrivateRoute>
           
-          <Route path="/covid">
-            <Covid></Covid>
-          </Route>
+          <PrivateRoute path="/covid">
+            <CovidData></CovidData>
+          </PrivateRoute>
 
           <PrivateRoute path="/serviceDetails/:serviceId">
             <ServiceDetails></ServiceDetails>

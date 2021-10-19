@@ -1,8 +1,7 @@
 #covid {
 	background-image: url('https://www.pharmaceutical-technology.com/wp-content/uploads/sites/10/2020/04/Malaysia_559007341-e1599478831476.jpg');
+	background-attachment: fixed;
 	background-size: cover;
-	width: 100%;
-	height: 600px;
 	color: white;
 }
 
@@ -10,7 +9,6 @@
 	content: '';
 	display: inline-block;
 	width: 100%;
-	height: 600px;
 	background-color: rgba(0, 0, 0, 0.6);
 }
 
@@ -19,7 +17,10 @@
 }
 
 #covid-content table {
-	height: 300px;
 	margin-top: 30px;
-	color: #fff;
+	height: 300px;
+	overflow: auto;
 }
+
+
+

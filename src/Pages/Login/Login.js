@@ -3,6 +3,8 @@ import { Alert } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import useAuth from '../../hooks/useAuth';
 import { useHistory, useLocation } from "react-router-dom";
+import googleSigninBtn from '../../images/google-signin.png';
+import { SocialIcon } from 'react-social-icons';
 
 const Login = () => {
 	const { error, signInUsingGoogle, handleLogin, handleEmailChange, handlePasswordChange } = useAuth();
@@ -12,10 +14,10 @@ const Login = () => {
 
 	const handleGoogleLogin = () => {
 		signInUsingGoogle()
-		.then(result => {
-			history.push(redirect_uri);
-		});
-}
+			.then(result => {
+				history.push(redirect_uri);
+			});
+	}
 
 	return (
 		<div className="sign-form">
@@ -37,7 +39,10 @@ const Login = () => {
 
 					<div className="or-sign-with"> or </div>
 
-					<button onClick={handleGoogleLogin} className="my-2 theme-secondary-btn text-uppercase w-100">Sign in with Google</button>
+					<button className="google-sign-btn my-2 py-1" onClick={handleGoogleLogin}>
+						<img src="https://www.freepnglogos.com/uploads/google-logo-png/google-logo-png-suite-everything-you-need-know-about-google-newest-0.png" alt="" />
+						<span className="mx-5 h6 fw-bold">Sign in with google</span>
+					</button>
 				</div>
 			</div>
 		</div>

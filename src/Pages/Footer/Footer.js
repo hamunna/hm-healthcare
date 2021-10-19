@@ -1,6 +1,7 @@
 import React from 'react';
 import { Container } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+import { SocialIcon } from 'react-social-icons';
 import './Footer.css';
 
 const Footer = () => {
@@ -18,7 +19,12 @@ const Footer = () => {
 							<p><small><strong>Phone: </strong>++8801787654321</small></p>
 							<p><small><strong>Email: </strong>info@hmcare.com</small></p>
 
-							<p><small><strong>Social Icons will go here...</strong></small></p>
+							<div className="d-flex gap-4">
+								<SocialIcon bgColor="white" url="https://www.facebook.com" style={{ height: 30, width: 30 }} />
+								<SocialIcon bgColor="white" url="https://www.twitter.com" style={{ height: 30, width: 30 }} />
+								<SocialIcon bgColor="white" url="https://www.linkedin.com" style={{ height: 30, width: 30 }} />
+								<SocialIcon bgColor="white" url="https://www.pinterest.com" style={{ height: 30, width: 30 }} />
+							</div>
 
 						</div>
 

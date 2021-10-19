@@ -1,6 +1,10 @@
 import React from 'react';
 import { Container } from 'react-bootstrap';
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
+const arrow = <FontAwesomeIcon icon={faArrowRight} />
+
 const About = () => {
 	return (
 		<div id="about" style={{paddingTop: '1px'}}>
@@ -16,7 +20,9 @@ const About = () => {
 
 						<p className="text-secondary">Medical professionals, organizations, and ancillary health care workers who provide medical care to those in need. Health services serve patients, families, communities, and populations. These services are centered around making health care accessible, high quality, and patient-centered.</p>
 
-						<button className="theme-primary-btn color-white fw-bold mb-5">Know more</button>
+						<button className="theme-primary-btn color-white fw-bold mb-5">Know more
+							<span className="mx-2">{arrow}</span>
+						</button>
 
 					</div>
 

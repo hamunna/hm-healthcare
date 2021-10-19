@@ -36,3 +36,15 @@
 	width: 200px;
 	padding: 5px;
 }
+
+.form-box .google-sign-btn {
+	border: none;
+	outline: none;
+	width: 100%;
+	border: 2px solid #5663c1;
+	border-radius: 10px;
+}
+
+.form-box .google-sign-btn img {
+	height: 30px;
+}

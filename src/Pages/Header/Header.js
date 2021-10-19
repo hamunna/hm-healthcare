@@ -19,7 +19,8 @@ const Header = () => {
 							<Nav.Link as={HashLink} to="/home#about">About us</Nav.Link>
 							<Nav.Link as={HashLink} to="/home#services">Services</Nav.Link>
 							<Nav.Link as={HashLink} to="/home#doctors">Doctors</Nav.Link>
-							<Link to="/doctors">DOCTORS</Link>
+							<Nav.Link className="text-primary" as={HashLink} to="/healthTips">Health Tips</Nav.Link>
+							<Nav.Link className="text-primary" as={HashLink} to="/covid">Corona Statistics</Nav.Link>
 						</Nav>
 
 						<div className="d-flex justify-content-end">
@@ -27,7 +28,7 @@ const Header = () => {
 
 								<span>
 									<Navbar.Text>
-										Signed in as: <Link to="/profile" className="mx-2">{user.displayName || name}</Link>
+										<span className="text-danger fw-bold">Hey:</span> <Link to="/profile" className="mx-2 text-success">{user.displayName}</Link>
 										<img style={{width: '30px', borderRadius: '50%'}} className="mx-2" src={user.photoURL} alt="" />
 									</Navbar.Text>
 

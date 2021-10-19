@@ -1,6 +1,10 @@
 import React from 'react';
 import healthcareBanner from '../../../images/health-care-banner.jpg';
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
+const arrow = <FontAwesomeIcon icon={faArrowRight} />
+
 const HealthcareBanner = () => {
 	return (
 		<div className="d-md-flex d-md-column d-sm-flex flex-sm-row mb-5">
@@ -19,7 +23,9 @@ const HealthcareBanner = () => {
 
 				<p className="my-4">Medical professionals, organizations, and ancillary health care workers who provide medical care to those in need. Health services serve patients, families, communities, and populations. These services are centered around making health care accessible, high quality, and patient-centered.</p>
 
-				<button className="theme-secondary-btn color-white fw-bold">Know more</button>
+				<button className="theme-secondary-btn color-white fw-bold">Know more
+					<span className="mx-2">{arrow}</span>
+				</button>
 
 			</div>
 

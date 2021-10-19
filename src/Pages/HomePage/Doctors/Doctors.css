@@ -1,0 +1,12 @@
+#doctor-card {
+	border-bottom: 4px solid #5663c1;
+	height: 400px;
+	overflow: hidden;
+}
+
+#doctor-card:hover > .doc-social-icons, #doctor-card:hover > .doc-card-content {
+	transform: translateY(-40px);
+	transition-property: all;
+	transition-duration: 0.5s;
+	transition-timing-function: linear;
+}

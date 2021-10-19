@@ -1,0 +1,1555 @@
+[
+	{
+		"key": "1",
+		"Country": "United States",
+		"Cases": "45,908,212",
+		"Deaths": "746,509",
+		"Region": "North America"
+	},
+	{
+		"key": "2",
+		"Country": "India",
+		"Cases": "34,094,373",
+		"Deaths": "452,485",
+		"Region": "Asia"
+	},
+	{
+		"key": "3",
+		"Country": "Brazil",
+		"Cases": "21,651,910",
+		"Deaths": "603,521",
+		"Region": "South America"
+	},
+	{
+		"key": "4",
+		"Country": "United Kingdom",
+		"Cases": "8,497,868",
+		"Deaths": "138,629",
+		"Region": "Europe"
+	},
+	{
+		"key": "5",
+		"Country": "Russia",
+		"Cases": "8,027,012",
+		"Deaths": "224,310",
+		"Region": "Europe"
+	},
+	{
+		"key": "6",
+		"Country": "Turkey",
+		"Cases": "7,683,517",
+		"Deaths": "67,837",
+		"Region": "Asia"
+	},
+	{
+		"key": "7",
+		"Country": "France",
+		"Cases": "7,090,109",
+		"Deaths": "117,306",
+		"Region": "Europe"
+	},
+	{
+		"key": "8",
+		"Country": "Iran",
+		"Cases": "5,796,659",
+		"Deaths": "124,256",
+		"Region": "Asia"
+	},
+	{
+		"key": "9",
+		"Country": "Argentina",
+		"Cases": "5,273,463",
+		"Deaths": "115,704",
+		"Region": "South America"
+	},
+	{
+		"key": "10",
+		"Country": "Spain",
+		"Cases": "4,988,878",
+		"Deaths": "87,030",
+		"Region": "Europe"
+	},
+	{
+		"key": "11",
+		"Country": "Colombia",
+		"Cases": "4,982,575",
+		"Deaths": "126,886",
+		"Region": "South America"
+	},
+	{
+		"key": "12",
+		"Country": "Italy",
+		"Cases": "4,719,493",
+		"Deaths": "131,585",
+		"Region": "Europe"
+	},
+	{
+		"key": "13",
+		"Country": "Germany",
+		"Cases": "4,399,789",
+		"Deaths": "95,511",
+		"Region": "Europe"
+	},
+	{
+		"key": "14",
+		"Country": "Indonesia",
+		"Cases": "4,235,384",
+		"Deaths": "142,999",
+		"Region": "Asia"
+	},
+	{
+		"key": "15",
+		"Country": "Mexico",
+		"Cases": "3,758,469",
+		"Deaths": "284,477",
+		"Region": "North America"
+	},
+	{
+		"key": "16",
+		"Country": "Poland",
+		"Cases": "2,941,126",
+		"Deaths": "76,115",
+		"Region": "Europe"
+	},
+	{
+		"key": "17",
+		"Country": "South Africa",
+		"Cases": "2,916,803",
+		"Deaths": "88,619",
+		"Region": "Africa"
+	},
+	{
+		"key": "18",
+		"Country": "Philippines",
+		"Cases": "2,727,286",
+		"Deaths": "40,761",
+		"Region": "Asia"
+	},
+	{
+		"key": "19",
+		"Country": "Ukraine",
+		"Cases": "2,660,273",
+		"Deaths": "61,348",
+		"Region": "Europe"
+	},
+	{
+		"key": "20",
+		"Country": "Malaysia",
+		"Cases": "2,396,121",
+		"Deaths": "27,993",
+		"Region": "Asia"
+	},
+	{
+		"key": "21",
+		"Country": "Peru",
+		"Cases": "2,190,396",
+		"Deaths": "199,882",
+		"Region": "South America"
+	},
+	{
+		"key": "22",
+		"Country": "Netherlands",
+		"Cases": "2,051,065",
+		"Deaths": "18,250",
+		"Region": "Europe"
+	},
+	{
+		"key": "23",
+		"Country": "Iraq",
+		"Cases": "2,037,012",
+		"Deaths": "22,785",
+		"Region": "Asia"
+	},
+	{
+		"key": "24",
+		"Country": "Thailand",
+		"Cases": "1,802,934",
+		"Deaths": "18,407",
+		"Region": "Asia"
+	},
+	{
+		"key": "25",
+		"Country": "Japan (+Diamond Princess)",
+		"Cases": "1,715,432",
+		"Deaths": "18,116",
+		"Region": "Asia"
+	},
+	{
+		"key": "26",
+		"Country": "Czech Republic (Czechia)",
+		"Cases": "1,712,246",
+		"Deaths": "30,570",
+		"Region": "Europe"
+	},
+	{
+		"key": "27",
+		"Country": "Canada",
+		"Cases": "1,685,410",
+		"Deaths": "28,564",
+		"Region": "North America"
+	},
+	{
+		"key": "28",
+		"Country": "Chile",
+		"Cases": "1,672,065",
+		"Deaths": "37,620",
+		"Region": "South America"
+	},
+	{
+		"key": "29",
+		"Country": "Bangladesh",
+		"Cases": "1,565,827",
+		"Deaths": "27,778",
+		"Region": "Asia"
+	},
+	{
+		"key": "30",
+		"Country": "Romania",
+		"Cases": "1,467,401",
+		"Deaths": "42,042",
+		"Region": "Europe"
+	},
+	{
+		"key": "31",
+		"Country": "Israel",
+		"Cases": "1,317,758",
+		"Deaths": "8,010",
+		"Region": "Asia"
+	},
+	{
+		"key": "32",
+		"Country": "Belgium",
+		"Cases": "1,289,033",
+		"Deaths": "25,780",
+		"Region": "Europe"
+	},
+	{
+		"key": "33",
+		"Country": "Pakistan",
+		"Cases": "1,265,650",
+		"Deaths": "28,300",
+		"Region": "Asia"
+	},
+	{
+		"key": "34",
+		"Country": "Sweden",
+		"Cases": "1,161,933",
+		"Deaths": "14,916",
+		"Region": "Europe"
+	},
+	{
+		"key": "35",
+		"Country": "Portugal",
+		"Cases": "1,080,097",
+		"Deaths": "18,100",
+		"Region": "Europe"
+	},
+	{
+		"key": "36",
+		"Country": "Serbia",
+		"Cases": "1,055,296",
+		"Deaths": "9,157",
+		"Region": "Europe"
+	},
+	{
+		"key": "37",
+		"Country": "Morocco",
+		"Cases": "942,280",
+		"Deaths": "14,561",
+		"Region": "Africa"
+	},
+	{
+		"key": "38",
+		"Country": "Cuba",
+		"Cases": "936,809",
+		"Deaths": "8,079",
+		"Region": "North America"
+	},
+	{
+		"key": "39",
+		"Country": "Kazakhstan",
+		"Cases": "919,533",
+		"Deaths": "11,797",
+		"Region": "Asia"
+	},
+	{
+		"key": "40",
+		"Country": "Vietnam",
+		"Cases": "867,221",
+		"Deaths": "21,269",
+		"Region": "Asia"
+	},
+	{
+		"key": "41",
+		"Country": "Switzerland",
+		"Cases": "856,955",
+		"Deaths": "11,174",
+		"Region": "Europe"
+	},
+	{
+		"key": "42",
+		"Country": "Jordan",
+		"Cases": "843,204",
+		"Deaths": "10,887",
+		"Region": "Asia"
+	},
+	{
+		"key": "43",
+		"Country": "Hungary",
+		"Cases": "837,248",
+		"Deaths": "30,418",
+		"Region": "Europe"
+	},
+	{
+		"key": "44",
+		"Country": "Nepal",
+		"Cases": "805,560",
+		"Deaths": "11,293",
+		"Region": "Asia"
+	},
+	{
+		"key": "45",
+		"Country": "Austria",
+		"Cases": "777,679",
+		"Deaths": "11,180",
+		"Region": "Europe"
+	},
+	{
+		"key": "46",
+		"Country": "United Arab Emirates",
+		"Cases": "738,690",
+		"Deaths": "2,120",
+		"Region": "Asia"
+	},
+	{
+		"key": "47",
+		"Country": "Tunisia",
+		"Cases": "710,953",
+		"Deaths": "25,100",
+		"Region": "Africa"
+	},
+	{
+		"key": "48",
+		"Country": "Greece",
+		"Cases": "697,033",
+		"Deaths": "15,418",
+		"Region": "Europe"
+	},
+	{
+		"key": "49",
+		"Country": "Georgia",
+		"Cases": "670,552",
+		"Deaths": "9,546",
+		"Region": "Asia"
+	},
+	{
+		"key": "50",
+		"Country": "Lebanon",
+		"Cases": "634,209",
+		"Deaths": "8,430",
+		"Region": "Asia"
+	},
+	{
+		"key": "51",
+		"Country": "Guatemala",
+		"Cases": "588,262",
+		"Deaths": "14,387",
+		"Region": "North America"
+	},
+	{
+		"key": "52",
+		"Country": "Belarus",
+		"Cases": "573,943",
+		"Deaths": "4,417",
+		"Region": "Europe"
+	},
+	{
+		"key": "53",
+		"Country": "Costa Rica",
+		"Cases": "552,953",
+		"Deaths": "6,857",
+		"Region": "North America"
+	},
+	{
+		"key": "54",
+		"Country": "Saudi Arabia",
+		"Cases": "547,969",
+		"Deaths": "8,765",
+		"Region": "Asia"
+	},
+	{
+		"key": "55",
+		"Country": "Bulgaria",
+		"Cases": "545,598",
+		"Deaths": "22,488",
+		"Region": "Europe"
+	},
+	{
+		"key": "56",
+		"Country": "Sri Lanka",
+		"Cases": "532,218",
+		"Deaths": "13,507",
+		"Region": "Asia"
+	},
+	{
+		"key": "57",
+		"Country": "Ecuador",
+		"Cases": "513,026",
+		"Deaths": "32,899",
+		"Region": "South America"
+	},
+	{
+		"key": "58",
+		"Country": "Bolivia",
+		"Cases": "507,134",
+		"Deaths": "18,877",
+		"Region": "South America"
+	},
+	{
+		"key": "59",
+		"Country": "Azerbaijan",
+		"Cases": "503,452",
+		"Deaths": "6,778",
+		"Region": "Asia"
+	},
+	{
+		"key": "60",
+		"Country": "Myanmar",
+		"Cases": "488,875",
+		"Deaths": "18,388",
+		"Region": "Asia"
+	},
+	{
+		"key": "61",
+		"Country": "Panama",
+		"Cases": "470,395",
+		"Deaths": "7,294",
+		"Region": "North America"
+	},
+	{
+		"key": "62",
+		"Country": "Paraguay",
+		"Cases": "460,553",
+		"Deaths": "16,228",
+		"Region": "South America"
+	},
+	{
+		"key": "63",
+		"Country": "Slovakia",
+		"Cases": "437,938",
+		"Deaths": "12,854",
+		"Region": "Europe"
+	},
+	{
+		"key": "64",
+		"Country": "Croatia",
+		"Cases": "428,233",
+		"Deaths": "8,907",
+		"Region": "Europe"
+	},
+	{
+		"key": "65",
+		"Country": "State of Palestine",
+		"Cases": "418,675",
+		"Deaths": "4,322",
+		"Region": "Asia"
+	},
+	{
+		"key": "66",
+		"Country": "Ireland",
+		"Cases": "416,690",
+		"Deaths": "5,306",
+		"Region": "Europe"
+	},
+	{
+		"key": "67",
+		"Country": "Kuwait",
+		"Cases": "412,371",
+		"Deaths": "2,458",
+		"Region": "Asia"
+	},
+	{
+		"key": "68",
+		"Country": "Venezuela",
+		"Cases": "394,061",
+		"Deaths": "4,734",
+		"Region": "South America"
+	},
+	{
+		"key": "69",
+		"Country": "Uruguay",
+		"Cases": "391,167",
+		"Deaths": "6,069",
+		"Region": "South America"
+	},
+	{
+		"key": "70",
+		"Country": "Honduras",
+		"Cases": "372,920",
+		"Deaths": "10,121",
+		"Region": "North America"
+	},
+	{
+		"key": "71",
+		"Country": "Lithuania",
+		"Cases": "372,585",
+		"Deaths": "5,489",
+		"Region": "Europe"
+	},
+	{
+		"key": "72",
+		"Country": "Dominican Republic",
+		"Cases": "371,447",
+		"Deaths": "4,090",
+		"Region": "North America"
+	},
+	{
+		"key": "73",
+		"Country": "Denmark",
+		"Cases": "369,403",
+		"Deaths": "2,688",
+		"Region": "Europe"
+	},
+	{
+		"key": "74",
+		"Country": "Ethiopia",
+		"Cases": "359,495",
+		"Deaths": "6,238",
+		"Region": "Africa"
+	},
+	{
+		"key": "75",
+		"Country": "Libya",
+		"Cases": "350,628",
+		"Deaths": "4,904",
+		"Region": "Africa"
+	},
+	{
+		"key": "76",
+		"Country": "South Korea",
+		"Cases": "344,518",
+		"Deaths": "2,689",
+		"Region": "Asia"
+	},
+	{
+		"key": "77",
+		"Country": "Mongolia",
+		"Cases": "340,839",
+		"Deaths": "1,574",
+		"Region": "Asia"
+	},
+	{
+		"key": "78",
+		"Country": "Egypt",
+		"Cases": "319,339",
+		"Deaths": "18,015",
+		"Region": "Africa"
+	},
+	{
+		"key": "79",
+		"Country": "Moldova",
+		"Cases": "317,899",
+		"Deaths": "7,273",
+		"Region": "Europe"
+	},
+	{
+		"key": "80",
+		"Country": "Slovenia",
+		"Cases": "308,501",
+		"Deaths": "4,641",
+		"Region": "Europe"
+	},
+	{
+		"key": "81",
+		"Country": "Oman",
+		"Cases": "304,066",
+		"Deaths": "4,106",
+		"Region": "Asia"
+	},
+	{
+		"key": "82",
+		"Country": "Armenia",
+		"Cases": "284,237",
+		"Deaths": "5,842",
+		"Region": "Asia"
+	},
+	{
+		"key": "83",
+		"Country": "Bahrain",
+		"Cases": "276,188",
+		"Deaths": "1,391",
+		"Region": "Asia"
+	},
+	{
+		"key": "84",
+		"Country": "Kenya",
+		"Cases": "252,066",
+		"Deaths": "5,224",
+		"Region": "Africa"
+	},
+	{
+		"key": "85",
+		"Country": "Bosnia and Herzegovina",
+		"Cases": "245,082",
+		"Deaths": "11,201",
+		"Region": "Europe"
+	},
+	{
+		"key": "86",
+		"Country": "Qatar",
+		"Cases": "237,996",
+		"Deaths": "608",
+		"Region": "Asia"
+	},
+	{
+		"key": "87",
+		"Country": "Zambia",
+		"Cases": "209,536",
+		"Deaths": "3,658",
+		"Region": "Africa"
+	},
+	{
+		"key": "88",
+		"Country": "Nigeria",
+		"Cases": "209,387",
+		"Deaths": "2,838",
+		"Region": "Africa"
+	},
+	{
+		"key": "89",
+		"Country": "Algeria",
+		"Cases": "205,364",
+		"Deaths": "5,873",
+		"Region": "Africa"
+	},
+	{
+		"key": "90",
+		"Country": "North Macedonia",
+		"Cases": "197,197",
+		"Deaths": "6,964",
+		"Region": "Europe"
+	},
+	{
+		"key": "91",
+		"Country": "Norway",
+		"Cases": "196,896",
+		"Deaths": "884",
+		"Region": "Europe"
+	},
+	{
+		"key": "92",
+		"Country": "Latvia",
+		"Cases": "186,869",
+		"Deaths": "2,897",
+		"Region": "Europe"
+	},
+	{
+		"key": "93",
+		"Country": "Botswana",
+		"Cases": "184,051",
+		"Deaths": "2,389",
+		"Region": "Africa"
+	},
+	{
+		"key": "94",
+		"Country": "Uzbekistan",
+		"Cases": "181,654",
+		"Deaths": "1,292",
+		"Region": "Asia"
+	},
+	{
+		"key": "95",
+		"Country": "Kyrgyzstan",
+		"Cases": "180,006",
+		"Deaths": "2,638",
+		"Region": "Asia"
+	},
+	{
+		"key": "96",
+		"Country": "Albania",
+		"Cases": "178,188",
+		"Deaths": "2,829",
+		"Region": "Europe"
+	},
+	{
+		"key": "97",
+		"Country": "Estonia",
+		"Cases": "173,335",
+		"Deaths": "1,429",
+		"Region": "Europe"
+	},
+	{
+		"key": "98",
+		"Country": "Afghanistan",
+		"Cases": "155,776",
+		"Deaths": "7,246",
+		"Region": "Asia"
+	},
+	{
+		"key": "99",
+		"Country": "Finland",
+		"Cases": "151,207",
+		"Deaths": "1,120",
+		"Region": "Europe"
+	},
+	{
+		"key": "100",
+		"Country": "Mozambique",
+		"Cases": "151,112",
+		"Deaths": "1,927",
+		"Region": "Africa"
+	},
+	{
+		"key": "101",
+		"Country": "Singapore",
+		"Cases": "150,731",
+		"Deaths": "239",
+		"Region": "Asia"
+	},
+	{
+		"key": "102",
+		"Country": "Australia",
+		"Cases": "147,301",
+		"Deaths": "1,558",
+		"Region": "Australia/Oceania"
+	},
+	{
+		"key": "103",
+		"Country": "Montenegro",
+		"Cases": "138,047",
+		"Deaths": "2,036",
+		"Region": "Europe"
+	},
+	{
+		"key": "104",
+		"Country": "Zimbabwe",
+		"Cases": "132,368",
+		"Deaths": "4,658",
+		"Region": "Africa"
+	},
+	{
+		"key": "105",
+		"Country": "Ghana",
+		"Cases": "129,440",
+		"Deaths": "1,167",
+		"Region": "Africa"
+	},
+	{
+		"key": "106",
+		"Country": "Namibia",
+		"Cases": "128,353",
+		"Deaths": "3,540",
+		"Region": "Africa"
+	},
+	{
+		"key": "107",
+		"Country": "Uganda",
+		"Cases": "125,261",
+		"Deaths": "3,185",
+		"Region": "Africa"
+	},
+	{
+		"key": "108",
+		"Country": "Cyprus",
+		"Cases": "120,806",
+		"Deaths": "565",
+		"Region": "Asia"
+	},
+	{
+		"key": "109",
+		"Country": "Cambodia",
+		"Cases": "117,035",
+		"Deaths": "2,681",
+		"Region": "Asia"
+	},
+	{
+		"key": "110",
+		"Country": "El Salvador",
+		"Cases": "110,188",
+		"Deaths": "3,505",
+		"Region": "North America"
+	},
+	{
+		"key": "111",
+		"Country": "Rwanda",
+		"Cases": "99,181",
+		"Deaths": "1,313",
+		"Region": "Africa"
+	},
+	{
+		"key": "112",
+		"Country": "Cameroon",
+		"Cases": "98,402",
+		"Deaths": "1,550",
+		"Region": "Africa"
+	},
+	{
+		"key": "113",
+		"Country": "China",
+		"Cases": "96,571",
+		"Deaths": "4,636",
+		"Region": "Asia"
+	},
+	{
+		"key": "114",
+		"Country": "Jamaica",
+		"Cases": "87,586",
+		"Deaths": "2,117",
+		"Region": "North America"
+	},
+	{
+		"key": "115",
+		"Country": "Maldives",
+		"Cases": "86,211",
+		"Deaths": "238",
+		"Region": "Asia"
+	},
+	{
+		"key": "116",
+		"Country": "Luxembourg",
+		"Cases": "79,982",
+		"Deaths": "839",
+		"Region": "Europe"
+	},
+	{
+		"key": "117",
+		"Country": "Senegal",
+		"Cases": "73,873",
+		"Deaths": "1,871",
+		"Region": "Africa"
+	},
+	{
+		"key": "118",
+		"Country": "Angola",
+		"Cases": "63,012",
+		"Deaths": "1,670",
+		"Region": "Africa"
+	},
+	{
+		"key": "119",
+		"Country": "Malawi",
+		"Cases": "61,726",
+		"Deaths": "2,294",
+		"Region": "Africa"
+	},
+	{
+		"key": "120",
+		"Country": "Côte d'Ivoire",
+		"Cases": "61,072",
+		"Deaths": "685",
+		"Region": "Africa"
+	},
+	{
+		"key": "121",
+		"Country": "DR Congo",
+		"Cases": "57,338",
+		"Deaths": "1,091",
+		"Region": "Africa"
+	},
+	{
+		"key": "122",
+		"Country": "Trinidad and Tobago",
+		"Cases": "54,267",
+		"Deaths": "1,605",
+		"Region": "North America"
+	},
+	{
+		"key": "123",
+		"Country": "Guadeloupe",
+		"Cases": "54,152",
+		"Deaths": "731",
+		"Region": "North America"
+	},
+	{
+		"key": "124",
+		"Country": "Réunion",
+		"Cases": "54,024",
+		"Deaths": "370",
+		"Region": "Africa"
+	},
+	{
+		"key": "125",
+		"Country": "Fiji",
+		"Cases": "51,846",
+		"Deaths": "663",
+		"Region": "Australia/Oceania"
+	},
+	{
+		"key": "126",
+		"Country": "Suriname",
+		"Cases": "46,996",
+		"Deaths": "1,029",
+		"Region": "South America"
+	},
+	{
+		"key": "127",
+		"Country": "Eswatini",
+		"Cases": "46,371",
+		"Deaths": "1,235",
+		"Region": "Africa"
+	},
+	{
+		"key": "128",
+		"Country": "French Guiana",
+		"Cases": "43,561",
+		"Deaths": "297",
+		"Region": "South America"
+	},
+	{
+		"key": "129",
+		"Country": "Madagascar",
+		"Cases": "42,898",
+		"Deaths": "958",
+		"Region": "Africa"
+	},
+	{
+		"key": "130",
+		"Country": "Martinique",
+		"Cases": "42,167",
+		"Deaths": "638",
+		"Region": "North America"
+	},
+	{
+		"key": "131",
+		"Country": "French Polynesia",
+		"Cases": "40,178",
+		"Deaths": "635",
+		"Region": "Australia/Oceania"
+	},
+	{
+		"key": "132",
+		"Country": "Sudan",
+		"Cases": "39,550",
+		"Deaths": "3,038",
+		"Region": "Africa"
+	},
+	{
+		"key": "133",
+		"Country": "Syria",
+		"Cases": "39,488",
+		"Deaths": "2,429",
+		"Region": "Asia"
+	},
+	{
+		"key": "134",
+		"Country": "Cabo Verde",
+		"Cases": "38,049",
+		"Deaths": "347",
+		"Region": "Africa"
+	},
+	{
+		"key": "135",
+		"Country": "Malta",
+		"Cases": "37,464",
+		"Deaths": "459",
+		"Region": "Europe"
+	},
+	{
+		"key": "136",
+		"Country": "Mauritania",
+		"Cases": "36,722",
+		"Deaths": "789",
+		"Region": "Africa"
+	},
+	{
+		"key": "137",
+		"Country": "Guyana",
+		"Cases": "34,514",
+		"Deaths": "875",
+		"Region": "South America"
+	},
+	{
+		"key": "138",
+		"Country": "Gabon",
+		"Cases": "33,842",
+		"Deaths": "218",
+		"Region": "Africa"
+	},
+	{
+		"key": "139",
+		"Country": "Laos",
+		"Cases": "32,314",
+		"Deaths": "40",
+		"Region": "Asia"
+	},
+	{
+		"key": "140",
+		"Country": "Guinea",
+		"Cases": "30,572",
+		"Deaths": "385",
+		"Region": "Africa"
+	},
+	{
+		"key": "141",
+		"Country": "Tanzania",
+		"Cases": "26,034",
+		"Deaths": "724",
+		"Region": "Africa"
+	},
+	{
+		"key": "142",
+		"Country": "Togo",
+		"Cases": "25,903",
+		"Deaths": "239",
+		"Region": "Africa"
+	},
+	{
+		"key": "143",
+		"Country": "Papua New Guinea",
+		"Cases": "25,068",
+		"Deaths": "309",
+		"Region": "Australia/Oceania"
+	},
+	{
+		"key": "144",
+		"Country": "Benin",
+		"Cases": "24,560",
+		"Deaths": "161",
+		"Region": "Africa"
+	},
+	{
+		"key": "145",
+		"Country": "Belize",
+		"Cases": "24,447",
+		"Deaths": "465",
+		"Region": "North America"
+	},
+	{
+		"key": "146",
+		"Country": "Haiti",
+		"Cases": "23,042",
+		"Deaths": "657",
+		"Region": "North America"
+	},
+	{
+		"key": "147",
+		"Country": "Bahamas",
+		"Cases": "21,978",
+		"Deaths": "626",
+		"Region": "North America"
+	},
+	{
+		"key": "148",
+		"Country": "Seychelles",
+		"Cases": "21,903",
+		"Deaths": "119",
+		"Region": "Africa"
+	},
+	{
+		"key": "149",
+		"Country": "Lesotho",
+		"Cases": "21,530",
+		"Deaths": "655",
+		"Region": "Africa"
+	},
+	{
+		"key": "150",
+		"Country": "Somalia",
+		"Cases": "21,269",
+		"Deaths": "1,180",
+		"Region": "Africa"
+	},
+	{
+		"key": "151",
+		"Country": "Mayotte",
+		"Cases": "20,439",
+		"Deaths": "181",
+		"Region": "Africa"
+	},
+	{
+		"key": "152",
+		"Country": "Timor-Leste",
+		"Cases": "19,725",
+		"Deaths": "119",
+		"Region": "Asia"
+	},
+	{
+		"key": "153",
+		"Country": "Burundi",
+		"Cases": "19,555",
+		"Deaths": "38",
+		"Region": "Africa"
+	},
+	{
+		"key": "154",
+		"Country": "Tajikistan",
+		"Cases": "17,086",
+		"Deaths": "124",
+		"Region": "Asia"
+	},
+	{
+		"key": "155",
+		"Country": "Curaçao",
+		"Cases": "16,936",
+		"Deaths": "172",
+		"Region": "North America"
+	},
+	{
+		"key": "156",
+		"Country": "Mauritius",
+		"Cases": "16,669",
+		"Deaths": "134",
+		"Region": "Africa"
+	},
+	{
+		"key": "157",
+		"Country": "Taiwan",
+		"Cases": "16,343",
+		"Deaths": "846",
+		"Region": "Asia"
+	},
+	{
+		"key": "158",
+		"Country": "Congo",
+		"Cases": "15,962",
+		"Deaths": "231",
+		"Region": "Africa"
+	},
+	{
+		"key": "159",
+		"Country": "Nicaragua",
+		"Cases": "15,737",
+		"Deaths": "206",
+		"Region": "North America"
+	},
+	{
+		"key": "160",
+		"Country": "Aruba",
+		"Cases": "15,732",
+		"Deaths": "170",
+		"Region": "North America"
+	},
+	{
+		"key": "161",
+		"Country": "Mali",
+		"Cases": "15,643",
+		"Deaths": "557",
+		"Region": "Africa"
+	},
+	{
+		"key": "162",
+		"Country": "Andorra",
+		"Cases": "15,367",
+		"Deaths": "130",
+		"Region": "Europe"
+	},
+	{
+		"key": "163",
+		"Country": "Burkina Faso",
+		"Cases": "14,752",
+		"Deaths": "203",
+		"Region": "Africa"
+	},
+	{
+		"key": "164",
+		"Country": "Djibouti",
+		"Cases": "13,415",
+		"Deaths": "181",
+		"Region": "Africa"
+	},
+	{
+		"key": "165",
+		"Country": "Barbados",
+		"Cases": "13,171",
+		"Deaths": "119",
+		"Region": "North America"
+	},
+	{
+		"key": "166",
+		"Country": "Equatorial Guinea",
+		"Cases": "13,020",
+		"Deaths": "161",
+		"Region": "Africa"
+	},
+	{
+		"key": "167",
+		"Country": "Iceland",
+		"Cases": "12,614",
+		"Deaths": "33",
+		"Region": "Europe"
+	},
+	{
+		"key": "168",
+		"Country": "Channel Islands",
+		"Cases": "12,326",
+		"Deaths": "98",
+		"Region": "Europe"
+	},
+	{
+		"key": "169",
+		"Country": "Hong Kong",
+		"Cases": "12,300",
+		"Deaths": "213",
+		"Region": "Asia"
+	},
+	{
+		"key": "170",
+		"Country": "Saint Lucia",
+		"Cases": "12,234",
+		"Deaths": "237",
+		"Region": "North America"
+	},
+	{
+		"key": "171",
+		"Country": "South Sudan",
+		"Cases": "12,225",
+		"Deaths": "130",
+		"Region": "Africa"
+	},
+	{
+		"key": "172",
+		"Country": "Central African Republic",
+		"Cases": "11,478",
+		"Deaths": "100",
+		"Region": "Africa"
+	},
+	{
+		"key": "173",
+		"Country": "Brunei",
+		"Cases": "11,047",
+		"Deaths": "76",
+		"Region": "Asia"
+	},
+	{
+		"key": "174",
+		"Country": "New Caledonia",
+		"Cases": "10,163",
+		"Deaths": "243",
+		"Region": "Australia/Oceania"
+	},
+	{
+		"key": "175",
+		"Country": "Gambia",
+		"Cases": "9,946",
+		"Deaths": "339",
+		"Region": "Africa"
+	},
+	{
+		"key": "176",
+		"Country": "Yemen",
+		"Cases": "9,556",
+		"Deaths": "1,807",
+		"Region": "Asia"
+	},
+	{
+		"key": "177",
+		"Country": "Isle of Man",
+		"Cases": "8,647",
+		"Deaths": "54",
+		"Region": "Europe"
+	},
+	{
+		"key": "178",
+		"Country": "Eritrea",
+		"Cases": "6,776",
+		"Deaths": "45",
+		"Region": "Africa"
+	},
+	{
+		"key": "179",
+		"Country": "Sierra Leone",
+		"Cases": "6,396",
+		"Deaths": "121",
+		"Region": "Africa"
+	},
+	{
+		"key": "180",
+		"Country": "Niger",
+		"Cases": "6,177",
+		"Deaths": "205",
+		"Region": "Africa"
+	},
+	{
+		"key": "181",
+		"Country": "Guinea-Bissau",
+		"Cases": "6,130",
+		"Deaths": "141",
+		"Region": "Africa"
+	},
+	{
+		"key": "182",
+		"Country": "Liberia",
+		"Cases": "5,807",
+		"Deaths": "286",
+		"Region": "Africa"
+	},
+	{
+		"key": "183",
+		"Country": "Grenada",
+		"Cases": "5,769",
+		"Deaths": "193",
+		"Region": "North America"
+	},
+	{
+		"key": "184",
+		"Country": "Gibraltar",
+		"Cases": "5,769",
+		"Deaths": "98",
+		"Region": "Europe"
+	},
+	{
+		"key": "185",
+		"Country": "Bermuda",
+		"Cases": "5,567",
+		"Deaths": "95",
+		"Region": "North America"
+	},
+	{
+		"key": "186",
+		"Country": "San Marino",
+		"Cases": "5,475",
+		"Deaths": "91",
+		"Region": "Europe"
+	},
+	{
+		"key": "187",
+		"Country": "New Zealand",
+		"Cases": "5,153",
+		"Deaths": "28",
+		"Region": "Australia/Oceania"
+	},
+	{
+		"key": "188",
+		"Country": "Chad",
+		"Cases": "5,067",
+		"Deaths": "174",
+		"Region": "Africa"
+	},
+	{
+		"key": "189",
+		"Country": "St. Vincent & Grenadines",
+		"Cases": "4,627",
+		"Deaths": "53",
+		"Region": "North America"
+	},
+	{
+		"key": "190",
+		"Country": "Sint Maarten",
+		"Cases": "4,448",
+		"Deaths": "73",
+		"Region": "North America"
+	},
+	{
+		"key": "191",
+		"Country": "Comoros",
+		"Cases": "4,191",
+		"Deaths": "147",
+		"Region": "Africa"
+	},
+	{
+		"key": "192",
+		"Country": "Dominica",
+		"Cases": "4,153",
+		"Deaths": "28",
+		"Region": "North America"
+	},
+	{
+		"key": "193",
+		"Country": "Antigua and Barbuda",
+		"Cases": "3,918",
+		"Deaths": "95",
+		"Region": "North America"
+	},
+	{
+		"key": "194",
+		"Country": "Saint Martin",
+		"Cases": "3,819",
+		"Deaths": "55",
+		"Region": "North America"
+	},
+	{
+		"key": "195",
+		"Country": "Sao Tome & Principe",
+		"Cases": "3,677",
+		"Deaths": "56",
+		"Region": "Africa"
+	},
+	{
+		"key": "196",
+		"Country": "Liechtenstein",
+		"Cases": "3,500",
+		"Deaths": "60",
+		"Region": "Europe"
+	},
+	{
+		"key": "197",
+		"Country": "Monaco",
+		"Cases": "3,363",
+		"Deaths": "33",
+		"Region": "Europe"
+	},
+	{
+		"key": "198",
+		"Country": "Turks and Caicos",
+		"Cases": "2,926",
+		"Deaths": "23",
+		"Region": "North America"
+	},
+	{
+		"key": "199",
+		"Country": "British Virgin Islands",
+		"Cases": "2,725",
+		"Deaths": "37",
+		"Region": "North America"
+	},
+	{
+		"key": "200",
+		"Country": "Bhutan",
+		"Cases": "2,617",
+		"Deaths": "3",
+		"Region": "Asia"
+	},
+	{
+		"key": "201",
+		"Country": "Saint Kitts & Nevis",
+		"Cases": "2,574",
+		"Deaths": "21",
+		"Region": "North America"
+	},
+	{
+		"key": "202",
+		"Country": "Caribbean Netherlands",
+		"Cases": "2,341",
+		"Deaths": "19",
+		"Region": "North America"
+	},
+	{
+		"key": "203",
+		"Country": "Saint Barthelemy",
+		"Cases": "1,588",
+		"Deaths": "6",
+		"Region": "North America"
+	},
+	{
+		"key": "204",
+		"Country": "Faeroe Islands",
+		"Cases": "1,350",
+		"Deaths": "2",
+		"Region": "Europe"
+	},
+	{
+		"key": "205",
+		"Country": "Cayman Islands",
+		"Cases": "1,011",
+		"Deaths": "2",
+		"Region": "North America"
+	},
+	{
+		"key": "206",
+		"Country": "Anguilla",
+		"Cases": "698",
+		"Deaths": "1",
+		"Region": "North America"
+	},
+	{
+		"key": "207",
+		"Country": "Greenland",
+		"Cases": "654",
+		"Deaths": "0",
+		"Region": "North America"
+	},
+	{
+		"key": "208",
+		"Country": "Wallis & Futuna",
+		"Cases": "445",
+		"Deaths": "7",
+		"Region": "Australia/Oceania"
+	},
+	{
+		"key": "209",
+		"Country": "Macao",
+		"Cases": "77",
+		"Deaths": "0",
+		"Region": "Asia"
+	},
+	{
+		"key": "210",
+		"Country": "Falkland Islands",
+		"Cases": "68",
+		"Deaths": "0",
+		"Region": "South America"
+	},
+	{
+		"key": "211",
+		"Country": "Montserrat",
+		"Cases": "41",
+		"Deaths": "1",
+		"Region": "North America"
+	},
+	{
+		"key": "212",
+		"Country": "Saint Pierre & Miquelon",
+		"Cases": "32",
+		"Deaths": "0",
+		"Region": "North America"
+	},
+	{
+		"key": "213",
+		"Country": "Holy See",
+		"Cases": "27",
+		"Deaths": "0",
+		"Region": "Europe"
+	},
+	{
+		"key": "214",
+		"Country": "Solomon Islands",
+		"Cases": "20",
+		"Deaths": "0",
+		"Region": "Australia/Oceania"
+	},
+	{
+		"key": "215",
+		"Country": "Western Sahara",
+		"Cases": "10",
+		"Deaths": "1",
+		"Region": "Africa"
+	},
+	{
+		"key": "216",
+		"Country": "MS Zaandam",
+		"Cases": "9",
+		"Deaths": "2"
+	},
+	{
+		"key": "217",
+		"Country": "Palau",
+		"Cases": "8",
+		"Deaths": "0",
+		"Region": "Australia/Oceania"
+	},
+	{
+		"key": "218",
+		"Country": "Vanuatu",
+		"Cases": "4",
+		"Deaths": "1",
+		"Region": "Australia/Oceania"
+	},
+	{
+		"key": "219",
+		"Country": "Marshall Islands",
+		"Cases": "4",
+		"Deaths": "0",
+		"Region": "Australia/Oceania"
+	},
+	{
+		"key": "220",
+		"Country": "Samoa",
+		"Cases": "3",
+		"Deaths": "0",
+		"Region": "Australia/Oceania"
+	},
+	{
+		"key": "221",
+		"Country": "Saint Helena",
+		"Cases": "2",
+		"Deaths": "0",
+		"Region": "Africa"
+	},
+	{
+		"key": "222",
+		"Country": "Micronesia",
+		"Cases": "1",
+		"Deaths": "0",
+		"Region": "Australia/Oceania"
+	}
+]

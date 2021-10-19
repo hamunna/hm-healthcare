@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import useAuth from '../../hooks/useAuth';
 import { useHistory, useLocation } from "react-router-dom";
 import './Signup.css';
+import googleSigninBtn from '../../images/google-signin.png';
 
 const Signup = () => {
 	const { error, signInUsingGoogle, handleSignUp, handleNameChange, handleEmailChange, handlePasswordChange, handleConfirmPasswordChange } = useAuth();
@@ -41,7 +42,10 @@ const Signup = () => {
 
 					<div className="or-sign-with d-flex align-items-center gap-3">or</div>
 
-					<button onClick={handleGoogleLogin} className="my-2 theme-secondary-btn text-uppercase w-100">Sign in with Google</button>
+					<button className="google-sign-btn my-2 py-1" onClick={handleGoogleLogin}>
+						<img src="https://www.freepnglogos.com/uploads/google-logo-png/google-logo-png-suite-everything-you-need-know-about-google-newest-0.png" alt="" />
+						<span className="mx-5 h6 fw-bold">Sign in with google</span>
+					</button>
 				</div>
 			</div>
 		</div>
