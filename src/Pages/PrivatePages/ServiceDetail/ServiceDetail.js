@@ -1,9 +1,9 @@
 import React from 'react';
 import { Card, Col } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
 
-const Service = ({ service }) => {
-	const { id, image, title, description } = service;
+const ServiceDetail = ({ServiceDetail}) => {
+	const { id, image, title, description } = ServiceDetail;
+
 	return (
 		<>
 			<Col>
@@ -13,9 +13,6 @@ const Service = ({ service }) => {
 						<Card.Title className="text-uppercase fw-bold theme-primary-text">{title}</Card.Title>
 						<Card.Text>{description}</Card.Text>
 
-						<Link to={`/serviceDetails/${id}`}>
-							<button className="theme-primary-btn">View Details</button>
-						</Link>
 					</Card.Body>
 				</Card>
 			</Col>
@@ -23,4 +20,4 @@ const Service = ({ service }) => {
 	);
 };
 
-export default Service;
+export default ServiceDetail;

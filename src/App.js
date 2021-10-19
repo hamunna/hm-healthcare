@@ -1,3 +1,9 @@
+import React from 'react';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route
+} from "react-router-dom";
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Header from './Pages/Header/Header';
@@ -6,24 +12,18 @@ import Signup from './Pages/Signup/Signup';
 import Login from './Pages/Login/Login';
 import NotFound from './Pages/NotFound/NotFound';
 import Footer from './Pages/Footer/Footer';
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  useRouteMatch,
-  useParams
-} from "react-router-dom";
-
-// ========
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCoffee } from '@fortawesome/free-solid-svg-icons'
 import AuthProvider from './Context/AuthProvider';
-import useAuth from './hooks/useAuth';
 import Doctors from './Pages/HomePage/Doctors/Doctors';
 import PrivateRoute from './Private/PrivateRoute';
+import HealthTips from './Pages/PrivatePages/HealthTips/HealthTips';
+import Covid from './Pages/PrivatePages/Covid/Covid';
+import ServiceDetails from './Pages/PrivatePages/ServiceDetails/ServiceDetails';
 
+/* // ========
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCoffee } from '@fortawesome/free-solid-svg-icons';
 const element = <FontAwesomeIcon icon={faCoffee} />
-// ========
+// ======== */
 
 
 function App() {
@@ -52,6 +52,18 @@ function App() {
 
           <PrivateRoute path="/doctors">
             <Doctors></Doctors>
+          </PrivateRoute>
+
+          <PrivateRoute path="/healthTips">
+            <HealthTips></HealthTips>
+          </PrivateRoute>
+          
+          <Route path="/covid">
+            <Covid></Covid>
+          </Route>
+
+          <PrivateRoute path="/serviceDetails/:serviceId">
+            <ServiceDetails></ServiceDetails>
           </PrivateRoute>
 
           <Route path="*">
