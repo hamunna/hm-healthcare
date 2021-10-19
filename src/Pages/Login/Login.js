@@ -3,11 +3,10 @@ import { Alert } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import useAuth from '../../hooks/useAuth';
 import { useHistory, useLocation } from "react-router-dom";
-import googleSigninBtn from '../../images/google-signin.png';
-import { SocialIcon } from 'react-social-icons';
 
 const Login = () => {
-	const { error, signInUsingGoogle, handleLogin, handleEmailChange, handlePasswordChange } = useAuth();
+	const { error, signInUsingGoogle, handleLogin, handleEmailChange, handlePasswordChange, setIsLoading } = useAuth();
+
 	const history = useHistory();
 	const location = useLocation();
 	const redirect_uri = location.state?.from || '/home';
@@ -16,7 +15,8 @@ const Login = () => {
 		signInUsingGoogle()
 			.then(result => {
 				history.push(redirect_uri);
-			});
+			})
+			.finally(()=> setIsLoading(false))
 	}
 
 	return (

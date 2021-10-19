@@ -16,12 +16,12 @@ const HealthcareBanner = () => {
 
 			{/* Right Side of About */}
 			<div className="theme-primary-bg text-white p-5 w-100">
-				<h2 className="fw-bold text-capitalize">the world's best treatment in our hospital</h2>
+				<h2 className="fw-bold text-capitalize">Health services consist of medical professionals</h2>
 
-				<h6 className="my-4 fw-bolder">Health services consist of medical professionals</h6>
+				<h6 className="my-4 fw-bolder">The world's best treatment in our hospital</h6>
 
 
-				<p className="my-4">Medical professionals, organizations, and ancillary health care workers who provide medical care to those in need. Health services serve patients, families, communities, and populations. These services are centered around making health care accessible, high quality, and patient-centered.</p>
+				<p className="my-4">Organizations, and ancillary health care workers who provide medical care to those in need. Health services serve patients, families, communities, and populations. These services are centered around making health care accessible, high quality, and patient-centered.</p>
 
 				<button className="theme-secondary-btn color-white fw-bold">Know more
 					<span className="mx-2">{arrow}</span>

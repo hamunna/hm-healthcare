@@ -11,13 +11,14 @@ const useFirebase = () => {
 	const [password, setPassword] = useState('');
 	const [confirmPassword, setConfirmPassword] = useState('');
 	const [error, setError] = useState('');
-	// const [isLogin, setIsLogin] = useState(false);
+	const [isLoading, setIsLoading] = useState(false);
 
 	const googleProvider = new GoogleAuthProvider();
 	const auth = getAuth();
 
 	// Sign In Using Google Acctount
 	const signInUsingGoogle = () => {
+		setIsLoading(true)
 		return signInWithPopup(auth, googleProvider)
 
 	}
@@ -35,8 +36,10 @@ const useFirebase = () => {
 	}, []);
 
 	const logOut = () => {
+		setIsLoading(true)
 		signOut(auth)
 			.then(() => { })
+			.finally(() => setIsLoading(false))
 	}
 
 	//==================
@@ -78,12 +81,14 @@ const useFirebase = () => {
 			return;
 		}
 		createNewUser(email, password);
+		setIsLoading(false);
 	}
 
 	// Login Handle
 	const handleLogin = e => {
 		e.preventDefault();
 		processLogin(email, password);
+		setIsLoading(false);
 	}
 
 
@@ -129,6 +134,7 @@ const useFirebase = () => {
 	return {
 		user,
 		error,
+		isLoading,
 		signInUsingGoogle,
 		logOut,
 		handleSignUp,
@@ -136,7 +142,8 @@ const useFirebase = () => {
 		handleEmailChange,
 		handlePasswordChange,
 		handleConfirmPasswordChange,
-		handleLogin
+		handleLogin,
+		setIsLoading
 
 	}
 }

@@ -4,10 +4,9 @@ import { Link } from 'react-router-dom';
 import useAuth from '../../hooks/useAuth';
 import { useHistory, useLocation } from "react-router-dom";
 import './Signup.css';
-import googleSigninBtn from '../../images/google-signin.png';
 
 const Signup = () => {
-	const { error, signInUsingGoogle, handleSignUp, handleNameChange, handleEmailChange, handlePasswordChange, handleConfirmPasswordChange } = useAuth();
+	const { error, signInUsingGoogle, handleSignUp, handleNameChange, handleEmailChange, handlePasswordChange, handleConfirmPasswordChange, setIsLoading } = useAuth();
 
 	const history = useHistory();
 	const location = useLocation();
@@ -17,7 +16,8 @@ const Signup = () => {
 		signInUsingGoogle()
 			.then(result => {
 				history.push(redirect_uri);
-			});
+			})
+			.finally(()=> setIsLoading(false));
 	}
 
 	return (
@@ -37,10 +37,10 @@ const Signup = () => {
 
 						<button className="my-2 theme-primary-btn w-100" type="submit">Create Account</button>
 
-						<p>Already a member? <Link to="/login">Login</Link></p>
 					</form>
+						<p>Not a member? <Link to="/login">Login</Link></p>
 
-					<div className="or-sign-with d-flex align-items-center gap-3">or</div>
+					<div className="or-sign-with">or</div>
 
 					<button className="google-sign-btn my-2 py-1" onClick={handleGoogleLogin}>
 						<img src="https://www.freepnglogos.com/uploads/google-logo-png/google-logo-png-suite-everything-you-need-know-about-google-newest-0.png" alt="" />

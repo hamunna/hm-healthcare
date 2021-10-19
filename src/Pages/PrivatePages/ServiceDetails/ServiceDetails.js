@@ -25,7 +25,7 @@ const ServiceDetails = () => {
 
 
 	return (
-		<div>
+		<div style={{marginTop: '100px'}}>
 
 			<Container>
 				<Card className="w-50 my-5 mx-auto">
