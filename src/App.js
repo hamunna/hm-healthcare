@@ -2,7 +2,8 @@ import React from 'react';
 import {
   BrowserRouter as Router,
   Switch,
-  Route
+  Route,
+  Redirect
 } from "react-router-dom";
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -18,10 +19,8 @@ import PrivateRoute from './Private/PrivateRoute';
 import HealthTips from './Pages/PrivatePages/HealthTips/HealthTips';
 import ServiceDetails from './Pages/PrivatePages/ServiceDetails/ServiceDetails';
 import CovidData from './Pages/PrivatePages/CovidData/CovidData';
-import useAuth from './hooks/useAuth';
 
 function App() {
-  // const { user } = useAuth();
   return (
     <AuthProvider>
       <Router>
