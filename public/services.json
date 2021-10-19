@@ -1,36 +1,36 @@
 [
 	{
-		"id": 1001,
+		"id": "1",
 		"title": "Therapy",
 		"description": "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts",
 		"image": "https://i.ibb.co/GFNLyCr/Woman-during-a-psychotherapy-session.jpg"
 	},
 	{
-		"id": 1002,
+		"id": "2",
 		"title": "Pharmocology",
 		"description": "A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy.",
 		"image": "https://i.ibb.co/zSR6KPh/Pharmocology.jpg"
 	},
 	{
-		"id": 1003,
+		"id": "3",
 		"title": "Dentistry",
 		"description": "But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give.",
 		"image": "https://i.ibb.co/HXPL9TN/Dentistry.jpg"
 	},
 	{
-		"id": 1004,
+		"id": "4",
 		"title": "Cardiology",
 		"description": "A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy.",
 		"image": "https://i.ibb.co/bX6kcwN/Cardiology.jpg"
 	},
 	{
-		"id": 1005,
+		"id": "5",
 		"title": "COVID-19 Care",
 		"description": "But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give.",
 		"image": "https://i.ibb.co/hWqh9Mr/COVID-19-Care.jpg"
 	},
 	{
-		"id": 1006,
+		"id": "6",
 		"title": "Eye Surgery",
 		"description": "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.",
 		"image": "https://i.ibb.co/y59ssY8/Eye-Surgery.jpg"

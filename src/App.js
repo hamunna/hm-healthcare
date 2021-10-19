@@ -62,9 +62,9 @@ function App() {
             <CovidData></CovidData>
           </PrivateRoute>
 
-          <PrivateRoute path="/serviceDetails/:serviceId">
+          <Route path="/serviceDetails/:serviceId">
             <ServiceDetails></ServiceDetails>
-          </PrivateRoute>
+          </Route>
 
           <Route path="*">
             <NotFound></NotFound>
