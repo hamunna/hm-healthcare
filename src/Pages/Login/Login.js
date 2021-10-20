@@ -20,9 +20,6 @@ const Login = () => {
 			.finally(() => setIsLoading(false))
 	}
 
-	//===========================
-	//===========================
-
 	// Email & Password Login Handle
 	const handleLogin = e => {
 		e.preventDefault();

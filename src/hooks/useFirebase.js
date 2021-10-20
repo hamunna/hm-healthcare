@@ -68,50 +68,14 @@ const useFirebase = () => {
 		setConfirmPassword(e.target.value);
 	}
 
-	// // SignUp Handling
-	// const handleSignUp = e => {
-	// 	e.preventDefault();
-
-	// 	const passwordValidation = /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/;
-	// 	if (!passwordValidation.test(password)) {
-	// 		setError('Password must be 8 character with letter & number combination');
-	// 		return;
-	// 	} else if (password !== confirmPassword) {
-	// 		setError("Password doesn't match!");
-	// 		return;
-	// 	}
-	// 	setIsLoading(false);
-	// 	createNewUser(email, password);
-	// }
-
-	// // Login Handle
-	// const handleLogin = e => {
-	// 	e.preventDefault();
-	// 	setIsLoading(false);
-	// 	processLogin(email, password);
-	// }
-
-
 	// Create New User
 	const createNewUser = (email, password) => {
 		return createUserWithEmailAndPassword(auth, email, password)
-			// .then(result => {
-			// 	const user = result.user;
-			// 	setError('');
-			// 	setUserName();
-			// 	verifyEmail();
-			// })
-			// .catch(error => setError(error.message))
 	}
 
 	// Login Process
 	const processLogin = (email, password) => {
 		return signInWithEmailAndPassword(auth, email, password)
-			// .then(result => {
-			// 	const user = result.user;
-			// 	setError('');
-			// })
-			// .catch(setError("Incorrect Email or Password!"));
 	}
 
 	// Email Veryfing
@@ -140,12 +104,10 @@ const useFirebase = () => {
 		isLoading,
 		signInUsingGoogle,
 		logOut,
-		// handleSignUp,
 		handleNameChange,
 		handleEmailChange,
 		handlePasswordChange,
 		handleConfirmPasswordChange,
-		// handleLogin,
 		processLogin,
 		setIsLoading,
 		setError,
