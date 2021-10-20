@@ -1,4 +1,4 @@
-import { getAuth, signInWithPopup, GoogleAuthProvider, createUserWithEmailAndPassword, onAuthStateChanged, signInWithEmailAndPassword, sendEmailVerification, updateProfile, signOut } from "firebase/auth";
+import { getAuth, signInWithPopup, GoogleAuthProvider, createUserWithEmailAndPassword, onAuthStateChanged, signInWithEmailAndPassword, sendEmailVerification, updateProfile, signOut, sendPasswordResetEmail } from "firebase/auth";
 import { useEffect, useState } from "react";
 import initializeAuthentication from "../Firebase/firebase.init"
 
@@ -11,12 +11,13 @@ const useFirebase = () => {
 	const [password, setPassword] = useState('');
 	const [confirmPassword, setConfirmPassword] = useState('');
 	const [error, setError] = useState('');
+	const [success, setSuccess] = useState('');
 	const [isLoading, setIsLoading] = useState(true);
 
 	const googleProvider = new GoogleAuthProvider();
 	const auth = getAuth();
 
-	// Sign In Using Google Acctount
+	// Sign In Using Google Account
 	const signInUsingGoogle = () => {
 		setIsLoading(true)
 		return signInWithPopup(auth, googleProvider)
@@ -25,7 +26,7 @@ const useFirebase = () => {
 
 	// On Auth State Change to Observe user State
 	useEffect(() => {
-		const unsubscribeed = onAuthStateChanged(auth, user => {
+		const unsubscribed = onAuthStateChanged(auth, user => {
 			if (user) {
 				setUser(user);
 			} else {
@@ -33,7 +34,7 @@ const useFirebase = () => {
 			}
 			setIsLoading(false)
 		})
-		return () => unsubscribeed;
+		return () => unsubscribed;
 
 	}, []);
 
@@ -45,7 +46,7 @@ const useFirebase = () => {
 	}
 
 	//==================
-	// Events Hnadling
+	// Events Handling
 	//==================
 
 	// Name Field Handling
@@ -68,6 +69,10 @@ const useFirebase = () => {
 		setConfirmPassword(e.target.value);
 	}
 
+	//=====================================
+	// Email-Password Login & Signup System
+	//=====================================
+
 	// Create New User
 	const createNewUser = (email, password) => {
 		return createUserWithEmailAndPassword(auth, email, password)
@@ -78,13 +83,14 @@ const useFirebase = () => {
 		return signInWithEmailAndPassword(auth, email, password)
 	}
 
-	// Email Veryfing
+	// Email Verifying
 	const verifyEmail = () => {
 		sendEmailVerification(auth.currentUser)
 			.then(result => {
 				console.log(result)
 			})
-			.catch(error => setError(error.message));
+			.catch(error => setError(error.message))
+			.finally(success = setSuccess('We Sent You an Email Verification'));
 	}
 
 	// Set UserName
@@ -94,14 +100,22 @@ const useFirebase = () => {
 			.catch(error => setError(error.message));
 	}
 
+	// // Password Reset
+	// const handlePasswordReset = () => {
+	// 	sendPasswordResetEmail(auth, email)
+	// 		.then(result => { })
+	// 		.finally(() => setSuccess('Check Your Email to Reset Password'))
+	// }
+
 
 	return {
 		user,
-		error,
 		email,
 		password,
 		confirmPassword,
 		isLoading,
+		error,
+		success,
 		signInUsingGoogle,
 		logOut,
 		handleNameChange,
@@ -111,9 +125,11 @@ const useFirebase = () => {
 		processLogin,
 		setIsLoading,
 		setError,
+		setSuccess,
 		createNewUser,
 		setUserName,
-		verifyEmail
+		verifyEmail,
+		// handlePasswordReset
 
 	}
 }

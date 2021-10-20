@@ -12,7 +12,7 @@ const Signup = () => {
 	const location = useLocation();
 	const redirect_uri = location.state?.from || '/home';
 
-	// Google Signin Handle
+	// Google SignIn Handle
 	const handleGoogleLogin = () => {
 		signInUsingGoogle()
 			.then(result => {
