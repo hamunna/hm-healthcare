@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Container, Table } from 'react-bootstrap';
+import { Table } from 'react-bootstrap';
 import Covid from '../Covid/Covid';
 
 const CovidData = () => {

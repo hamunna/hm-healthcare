@@ -90,7 +90,6 @@ const useFirebase = () => {
 				console.log(result)
 			})
 			.catch(error => setError(error.message))
-		// .finally(success = setSuccess('We Sent You an Email Verification'));
 	}
 
 	// Set UserName
@@ -104,12 +103,15 @@ const useFirebase = () => {
 	const handlePasswordReset = () => {
 		sendPasswordResetEmail(auth, email)
 			.then(result => {
+				
+				// Checking not to be Blank Email Input
 				if (email !== '') {
 					setSuccess('Check Your Email to Reset Password')
 					setError('')
 				}
 			})
 			.catch(error => {
+
 				// Handle Errors here.
 				const errorCode = error.code;
 				if (errorCode === 'auth/missing-email') {
@@ -118,12 +120,9 @@ const useFirebase = () => {
 				} else {
 					setError("An unknown action or Email doesn't exist!");
 					setSuccess('')
-					// setError('');
 				}
 			})
-		// .finally(success => setSuccess('Check Your Email to Reset Password'))
 	}
-
 
 	return {
 		user,

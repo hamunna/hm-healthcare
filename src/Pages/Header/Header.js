@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import useAuth from '../../hooks/useAuth';
 
 const Header = () => {
-	const { user, name, logOut } = useAuth();
+	const { user, logOut } = useAuth();
 	return (
 		<header>
 			

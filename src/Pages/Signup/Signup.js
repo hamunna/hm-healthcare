@@ -5,6 +5,7 @@ import useAuth from '../../hooks/useAuth';
 import { useHistory, useLocation } from "react-router-dom";
 import './Signup.css';
 
+
 const Signup = () => {
 	const { error, signInUsingGoogle, handleNameChange, handleEmailChange, handlePasswordChange, handleConfirmPasswordChange, setIsLoading, setError, password, confirmPassword, email, createNewUser, setUserName, verifyEmail } = useAuth();
 
@@ -35,17 +36,20 @@ const Signup = () => {
 		}
 		setIsLoading(false);
 		createNewUser(email, password)
-		.then(result => {
-			const user = result.user;
-			history.push(redirect_uri);
-			setUserName();
-			verifyEmail();
-			setError('');
-		})
-		.catch(error => setError(error.message))
+			.then(result => {
+				const user = result.user;
+				history.push(redirect_uri);
+				setUserName();
+				verifyEmail();
+				setError('');
+			})
+			.catch(error => {
+				const errorCode = error.code;
+				if (errorCode === 'auth/email-already-in-use') {
+					setError('User already exists! Try with different Email');
+				}
+			});
 	}
-
-
 
 	return (
 		<div className="sign-form">

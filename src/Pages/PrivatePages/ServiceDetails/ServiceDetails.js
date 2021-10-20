@@ -34,11 +34,11 @@ const ServiceDetails = () => {
 						<Card.Title className="text-uppercase fw-bold theme-primary-text">{singleService?.title}</Card.Title>
 						<Card.Text>{singleService?.description}</Card.Text>
 
-							<div class="card-header">
+							<div className="card-header">
 								<h5 className="fw-bold text-center">Services Includes</h5>
 							</div>
 
-							<ul class="list-group list-group-flush">
+							<ul className="list-group list-group-flush">
 
 								{singleService?.services?.map(service => <li className="list-group-item">{service}</li>)}
 
