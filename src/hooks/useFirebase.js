@@ -84,12 +84,12 @@ const useFirebase = () => {
 		createNewUser(email, password);
 	}
 
-	// Login Handle
-	const handleLogin = e => {
-		e.preventDefault();
-		setIsLoading(false);
-		processLogin(email, password);
-	}
+	// // Login Handle
+	// const handleLogin = e => {
+	// 	e.preventDefault();
+	// 	setIsLoading(false);
+	// 	processLogin(email, password);
+	// }
 
 
 	// Create New User
@@ -106,12 +106,12 @@ const useFirebase = () => {
 
 	// Login Process
 	const processLogin = (email, password) => {
-		signInWithEmailAndPassword(auth, email, password)
-			.then(result => {
-				const user = result.user;
-				setError('');
-			})
-			.catch(setError("Incorrect Email or Password!"));
+		return signInWithEmailAndPassword(auth, email, password)
+			// .then(result => {
+			// 	const user = result.user;
+			// 	setError('');
+			// })
+			// .catch(setError("Incorrect Email or Password!"));
 	}
 
 	// Email Veryfing
@@ -134,6 +134,8 @@ const useFirebase = () => {
 	return {
 		user,
 		error,
+		email,
+		password,
 		isLoading,
 		signInUsingGoogle,
 		logOut,
@@ -142,8 +144,10 @@ const useFirebase = () => {
 		handleEmailChange,
 		handlePasswordChange,
 		handleConfirmPasswordChange,
-		handleLogin,
-		setIsLoading
+		// handleLogin,
+		processLogin,
+		setIsLoading,
+		setError
 
 	}
 }

@@ -5,7 +5,7 @@ import useAuth from '../../hooks/useAuth';
 import { useHistory, useLocation } from "react-router-dom";
 
 const Login = () => {
-	const { error, signInUsingGoogle, handleLogin, handleEmailChange, handlePasswordChange, setIsLoading } = useAuth();
+	const { error, signInUsingGoogle, handleEmailChange, handlePasswordChange, setIsLoading, processLogin, setError, email, password } = useAuth();
 
 	const history = useHistory();
 	const location = useLocation();
@@ -17,6 +17,22 @@ const Login = () => {
 				history.push(redirect_uri);
 			})
 			.finally(() => setIsLoading(false))
+	}
+
+	//===========================
+	//===========================
+
+	// Login Handle
+	const handleLogin = e => {
+		e.preventDefault();
+		setIsLoading(false);
+		processLogin(email, password)
+		.then(result => {
+			const user = result.user;
+			history.push(redirect_uri);
+			setError('');
+		})
+		.catch(setError("Incorrect Email or Password!"));
 	}
 
 return (

@@ -20,6 +20,8 @@ const Signup = () => {
 			.finally(() => setIsLoading(false));
 	}
 
+	
+
 	return (
 		<div className="sign-form">
 			<div className="signing-overlay d-flex justify-content-center align-items-center">
