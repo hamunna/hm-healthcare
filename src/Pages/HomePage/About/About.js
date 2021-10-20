@@ -7,7 +7,7 @@ const arrow = <FontAwesomeIcon icon={faArrowRight} />
 
 const About = () => {
 	return (
-		<div id="about" style={{paddingTop: '1px'}}>
+		<div id="about" style={{paddingTop: '50px', marginBottom: '20px'}}>
 			<Container>
 				<div className="d-md-flex d-md-column d-sm-flex flex-sm-row gap-3 my-5 py-5">
 

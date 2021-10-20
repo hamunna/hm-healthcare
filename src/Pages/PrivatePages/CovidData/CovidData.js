@@ -37,6 +37,7 @@ const CovidData = () => {
 							</tbody>
 						</Table>
 
+
 					</div>
 				</Container>
 			</div>

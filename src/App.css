@@ -49,6 +49,10 @@
   height: 315px;
 }
 
+.slider-caption-bg {
+  background-color: rgba(256, 256, 256, 0.6)
+}
+
 /* Responsive Design */
 
 @media only screen and (max-width: 767px) {

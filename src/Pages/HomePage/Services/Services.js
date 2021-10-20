@@ -13,7 +13,7 @@ const Services = () => {
 	}, []);
 
 	return (
-		<div id="services" style={{ backgroundColor: '#f2f2f2', padding: '70px' }}>
+		<div id="services" style={{ backgroundColor: '#f2f2f2', padding: '100px 0' }}>
 			<Container>
 				<div className="text-center mb-5">
 					<h2 className="theme-primary-text text-uppercase fw-bold">Our Services</h2>

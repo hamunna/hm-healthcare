@@ -25,7 +25,7 @@ const Home = () => {
 							src={slider1}
 							alt="First slide"
 						/>
-						<Carousel.Caption>
+						<Carousel.Caption className="d-none d-md-block slider-caption-bg">
 							<h3>Feel better soon!</h3>
 							<p>May good health envelop you, spurring a quick recovery.</p>
 						</Carousel.Caption>
@@ -40,7 +40,7 @@ const Home = () => {
 							alt="Second slide"
 						/>
 
-						<Carousel.Caption>
+						<Carousel.Caption className="d-none d-md-block slider-caption-bg">
 							<h3>Have a speedy recovery!</h3>
 							<p>We hope each new day brings you closer to a full and speedy recovery!</p>
 						</Carousel.Caption>
@@ -55,7 +55,7 @@ const Home = () => {
 							alt="Third slide"
 						/>
 
-						<Carousel.Caption>
+						<Carousel.Caption className="d-none d-md-block slider-caption-bg">
 							<h3>Hoping you find strength with each new day</h3>
 							<p>Thinking of you lots and hoping for your speedy recovery.</p>
 						</Carousel.Caption>

@@ -18,7 +18,7 @@ const Doctor = ({ doctor }) => {
 						</Card.Body>
 					</div>
 
-					<div className="doc-social-icons d-flex gap-4 justify-content-evenly">
+					<div className="doc-social-icons d-flex gap-2 justify-content-center">
 						<SocialIcon bgColor="#5663c1" url="https://www.facebook.com" style={{ height: 30, width: 30 }} />
 						<SocialIcon bgColor="#5663c1" url="https://www.twitter.com" style={{ height: 30, width: 30 }} />
 						<SocialIcon bgColor="#5663c1" url="https://www.linkedin.com" style={{ height: 30, width: 30 }} />

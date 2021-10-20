@@ -22,5 +22,13 @@
 	overflow: auto;
 }
 
+table {
+width: 100%;
+}
 
+@media only screen and (max-with: 991px){
+	table td:last-child {
+	width: 70%;
+	}	
+}
 
