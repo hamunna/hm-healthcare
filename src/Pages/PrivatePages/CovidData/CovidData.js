@@ -24,7 +24,6 @@ const CovidData = () => {
 									<th>Country</th>
 									<th>Cases</th>
 									<th>Deaths</th>
-									<th>Region</th>
 								</tr>
 							</thead>
 							<tbody>

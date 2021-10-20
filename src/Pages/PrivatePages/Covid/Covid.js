@@ -1,5 +1,4 @@
 import React from 'react';
-import { Container, Table } from 'react-bootstrap';
 import './Covid.css';
 
 const Covid = ({ covid }) => {
@@ -10,7 +9,6 @@ const Covid = ({ covid }) => {
 			<td>{Country}</td>
 			<td>{Cases}</td>
 			<td>{Deaths}</td>
-			<td>{Region}</td>
 		</tr>
 
 	);
