@@ -28,7 +28,7 @@ const Login = () => {
 			.then(result => {
 				const user = result.user;
 				history.push(redirect_uri);
-				// setError('');
+				setError('');
 			})
 			.catch(error => {
 				// Handle Errors here.
@@ -41,9 +41,6 @@ const Login = () => {
 				}
 			})
 	}
-
-	// if (error.code === 'auth/wrong-password') {
-	// }
 
 	return (
 		<div className="sign-form">
@@ -61,9 +58,12 @@ const Login = () => {
 
 						<button className="my-2 theme-primary-btn w-100" type="submit">Login</button>
 
-						<p>Not a member? <Link to="/signup" className="text-decoration-none theme-primary-text fw-bold">Sign up</Link></p>
+						<div className="d-flex gap-5 justify-content-center align-items-center">
+							<p>Not a member? <Link to="/signup" className="text-decoration-none theme-primary-text fw-bold">Sign up</Link></p>
 
-						{/* <button onClick={handlePasswordReset} className="btn btn-secondary">Reset Password</button> */}
+							<h6 onClick={handlePasswordReset} className="btn fw-bold text-secondary">Reset Password</h6>
+						</div>
+
 					</form>
 
 					<div className="or-sign-with"> or </div>

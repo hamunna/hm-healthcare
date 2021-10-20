@@ -90,7 +90,7 @@ const useFirebase = () => {
 				console.log(result)
 			})
 			.catch(error => setError(error.message))
-			.finally(success = setSuccess('We Sent You an Email Verification'));
+		// .finally(success = setSuccess('We Sent You an Email Verification'));
 	}
 
 	// Set UserName
@@ -100,12 +100,29 @@ const useFirebase = () => {
 			.catch(error => setError(error.message));
 	}
 
-	// // Password Reset
-	// const handlePasswordReset = () => {
-	// 	sendPasswordResetEmail(auth, email)
-	// 		.then(result => { })
-	// 		.finally(() => setSuccess('Check Your Email to Reset Password'))
-	// }
+	// Password Reset
+	const handlePasswordReset = () => {
+		sendPasswordResetEmail(auth, email)
+			.then(result => {
+				if (email !== '') {
+					setSuccess('Check Your Email to Reset Password')
+					setError('')
+				}
+			})
+			.catch(error => {
+				// Handle Errors here.
+				const errorCode = error.code;
+				if (errorCode === 'auth/missing-email') {
+					setError('Please Complete Yor Email Field');
+					setSuccess('')
+				} else {
+					setError("An unknown action or Email doesn't exist!");
+					setSuccess('')
+					// setError('');
+				}
+			})
+		// .finally(success => setSuccess('Check Your Email to Reset Password'))
+	}
 
 
 	return {
@@ -129,7 +146,7 @@ const useFirebase = () => {
 		createNewUser,
 		setUserName,
 		verifyEmail,
-		// handlePasswordReset
+		handlePasswordReset
 
 	}
 }

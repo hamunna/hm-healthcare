@@ -38,9 +38,9 @@ const Signup = () => {
 		.then(result => {
 			const user = result.user;
 			history.push(redirect_uri);
-			setError('');
 			setUserName();
 			verifyEmail();
+			setError('');
 		})
 		.catch(error => setError(error.message))
 	}
