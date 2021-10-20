@@ -13,11 +13,11 @@ const CovidData = () => {
 	return (
 		<div id="covid">
 			<div id="covid-overly">
-				<Container>
+				<div className="container">
 					<div id="covid-content">
 						<h1 className="fw-bolder text-center">COVID-19 / Corona Virus Statistics</h1>
 
-						<Table striped bordered hover variant="dark">
+						<Table striped bordered hover variant="dark" className="mt-5">
 							<thead>
 								<tr>
 									<th>Sl No</th>
@@ -39,7 +39,7 @@ const CovidData = () => {
 
 
 					</div>
-				</Container>
+				</div>
 			</div>
 		</div>
 	);

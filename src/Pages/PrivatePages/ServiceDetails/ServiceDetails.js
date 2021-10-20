@@ -25,7 +25,7 @@ const ServiceDetails = () => {
 
 
 	return (
-		<div style={{marginTop: '100px'}}>
+		<div style={{ marginTop: '100px' }}>
 
 			<Container>
 				<Card className="w-50 my-5 mx-auto">
@@ -33,6 +33,16 @@ const ServiceDetails = () => {
 					<Card.Body>
 						<Card.Title className="text-uppercase fw-bold theme-primary-text">{singleService?.title}</Card.Title>
 						<Card.Text>{singleService?.description}</Card.Text>
+
+							<div class="card-header">
+								<h5 className="fw-bold text-center">Services Includes</h5>
+							</div>
+
+							<ul class="list-group list-group-flush">
+
+								{singleService?.services?.map(service => <li className="list-group-item">{service}</li>)}
+
+							</ul>
 
 					</Card.Body>
 				</Card>

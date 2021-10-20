@@ -16,19 +16,9 @@
 	padding-top: 100px;
 }
 
-#covid-content table {
-	margin-top: 30px;
-	height: 300px;
-	overflow: auto;
-}
-
-table {
-width: 100%;
-}
-
-@media only screen and (max-with: 991px){
-	table td:last-child {
-	width: 70%;
+/* @media only screen and (max-with: 991px){
+	table thead tr th:last-child {
+	display: none;
 	}	
-}
+} */
 

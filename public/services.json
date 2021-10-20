@@ -3,36 +3,82 @@
 		"id": "1",
 		"title": "Therapy",
 		"description": "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts",
-		"image": "https://i.ibb.co/GFNLyCr/Woman-during-a-psychotherapy-session.jpg"
+		"image": "https://i.ibb.co/GFNLyCr/Woman-during-a-psychotherapy-session.jpg",
+		"services": [
+			"Psychodynamic",
+			"Behavioral",
+			"CBT",
+			"Humanistic",
+			"Choosing"
+		]
 	},
 	{
 		"id": "2",
-		"title": "Pharmocology",
+		"title": "Pharmacology",
 		"description": "A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy.",
-		"image": "https://i.ibb.co/zSR6KPh/Pharmocology.jpg"
+		"image": "https://i.ibb.co/zSR6KPh/Pharmocology.jpg",
+		"services": [
+			"Pharmacognosy",
+			"Pharmacokinetics",
+			"Pharmacodynamics",
+			"Pharmacotherapeutics",
+			"Toxicology"
+		]
 	},
 	{
 		"id": "3",
 		"title": "Dentistry",
 		"description": "But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give.",
-		"image": "https://i.ibb.co/HXPL9TN/Dentistry.jpg"
+		"image": "https://i.ibb.co/HXPL9TN/Dentistry.jpg",
+		"services":[
+			"Teeth Cleaning",
+			"Restorations",
+			"Tooth Extractions",
+			"Teeth Removal",
+			"Root Canal",
+			"Dental Sealants"
+		]
 	},
 	{
 		"id": "4",
 		"title": "Cardiology",
 		"description": "Serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy a wonderful.",
-		"image": "https://i.ibb.co/bX6kcwN/Cardiology.jpg"
+		"image": "https://i.ibb.co/bX6kcwN/Cardiology.jpg",
+		"services":[
+			"Cardiac rehabilitation",
+			"Heart rhythm monitoring",
+			"Stress testing",
+			"Echocardiography",
+			"Cardiac Catheterization",
+			"ASD/PFO closure"
+		]
 	},
 	{
 		"id": "5",
 		"title": "COVID-19 Care",
 		"description": "Explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give but I must.",
-		"image": "https://i.ibb.co/hWqh9Mr/COVID-19-Care.jpg"
+		"image": "https://i.ibb.co/hWqh9Mr/COVID-19-Care.jpg",
+		"services":[
+			"COVID-19 Vaccine",
+			"Quarantine",
+			"Isolation",
+			"Vantilation",
+			"Sanitizer"
+		]
 	},
 	{
 		"id": "6",
 		"title": "Eye Surgery",
 		"description": "Behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts, far far away.",
-		"image": "https://i.ibb.co/y59ssY8/Eye-Surgery.jpg"
+		"image": "https://i.ibb.co/y59ssY8/Eye-Surgery.jpg",
+		"services":[
+			"Blepharoplasty",
+			"Cataract surgery",
+			"Corneal transplant",
+			"Glaucoma surgeries",
+			"LASIK (laser in-situ keratomileusis)",
+			"Retina surgeries",
+			"Eye muscle surgery"
+		]
 	}
 ]
