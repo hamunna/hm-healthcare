@@ -11,6 +11,7 @@ const Login = () => {
 	const location = useLocation();
 	const redirect_uri = location.state?.from || '/home';
 
+	// Google Signin Handle
 	const handleGoogleLogin = () => {
 		signInUsingGoogle()
 			.then(result => {
@@ -22,7 +23,7 @@ const Login = () => {
 	//===========================
 	//===========================
 
-	// Login Handle
+	// Email & Password Login Handle
 	const handleLogin = e => {
 		e.preventDefault();
 		setIsLoading(false);

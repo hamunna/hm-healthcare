@@ -12,6 +12,7 @@ const Signup = () => {
 	const location = useLocation();
 	const redirect_uri = location.state?.from || '/home';
 
+	// Google Signin Handle
 	const handleGoogleLogin = () => {
 		signInUsingGoogle()
 			.then(result => {
@@ -20,7 +21,7 @@ const Signup = () => {
 			.finally(() => setIsLoading(false));
 	}
 
-	// SignUp Handling
+	// Email & Password SignUp Handling
 	const handleSignUp = e => {
 		e.preventDefault();
 
