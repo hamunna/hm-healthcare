@@ -68,21 +68,21 @@ const useFirebase = () => {
 		setConfirmPassword(e.target.value);
 	}
 
-	// SignUp Handling
-	const handleSignUp = e => {
-		e.preventDefault();
+	// // SignUp Handling
+	// const handleSignUp = e => {
+	// 	e.preventDefault();
 
-		const passwordValidation = /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/;
-		if (!passwordValidation.test(password)) {
-			setError('Password must be 8 character with letter & number combination');
-			return;
-		} else if (password !== confirmPassword) {
-			setError("Password doesn't match!");
-			return;
-		}
-		setIsLoading(false);
-		createNewUser(email, password);
-	}
+	// 	const passwordValidation = /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/;
+	// 	if (!passwordValidation.test(password)) {
+	// 		setError('Password must be 8 character with letter & number combination');
+	// 		return;
+	// 	} else if (password !== confirmPassword) {
+	// 		setError("Password doesn't match!");
+	// 		return;
+	// 	}
+	// 	setIsLoading(false);
+	// 	createNewUser(email, password);
+	// }
 
 	// // Login Handle
 	// const handleLogin = e => {
@@ -94,14 +94,14 @@ const useFirebase = () => {
 
 	// Create New User
 	const createNewUser = (email, password) => {
-		createUserWithEmailAndPassword(auth, email, password)
-			.then(result => {
-				const user = result.user;
-				setError('');
-				setUserName();
-				verifyEmail();
-			})
-			.catch(error => setError(error.message))
+		return createUserWithEmailAndPassword(auth, email, password)
+			// .then(result => {
+			// 	const user = result.user;
+			// 	setError('');
+			// 	setUserName();
+			// 	verifyEmail();
+			// })
+			// .catch(error => setError(error.message))
 	}
 
 	// Login Process
@@ -136,10 +136,11 @@ const useFirebase = () => {
 		error,
 		email,
 		password,
+		confirmPassword,
 		isLoading,
 		signInUsingGoogle,
 		logOut,
-		handleSignUp,
+		// handleSignUp,
 		handleNameChange,
 		handleEmailChange,
 		handlePasswordChange,
@@ -147,7 +148,10 @@ const useFirebase = () => {
 		// handleLogin,
 		processLogin,
 		setIsLoading,
-		setError
+		setError,
+		createNewUser,
+		setUserName,
+		verifyEmail
 
 	}
 }

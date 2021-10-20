@@ -6,7 +6,7 @@ import { useHistory, useLocation } from "react-router-dom";
 import './Signup.css';
 
 const Signup = () => {
-	const { error, signInUsingGoogle, handleSignUp, handleNameChange, handleEmailChange, handlePasswordChange, handleConfirmPasswordChange, setIsLoading } = useAuth();
+	const { error, signInUsingGoogle, handleNameChange, handleEmailChange, handlePasswordChange, handleConfirmPasswordChange, setIsLoading, setError, password, confirmPassword, email, createNewUser, setUserName, verifyEmail } = useAuth();
 
 	const history = useHistory();
 	const location = useLocation();
@@ -20,7 +20,31 @@ const Signup = () => {
 			.finally(() => setIsLoading(false));
 	}
 
-	
+	// SignUp Handling
+	const handleSignUp = e => {
+		e.preventDefault();
+
+		const passwordValidation = /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/;
+		if (!passwordValidation.test(password)) {
+			setError('Password must be 8 character with letter & number combination');
+			return;
+		} else if (password !== confirmPassword) {
+			setError("Password doesn't match!");
+			return;
+		}
+		setIsLoading(false);
+		createNewUser(email, password)
+		.then(result => {
+			const user = result.user;
+			history.push(redirect_uri);
+			setError('');
+			setUserName();
+			verifyEmail();
+		})
+		.catch(error => setError(error.message))
+	}
+
+
 
 	return (
 		<div className="sign-form">
